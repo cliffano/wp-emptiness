@@ -1,0 +1,1 @@
+Emptiness is a minimalist WordPress theme with white background, mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
