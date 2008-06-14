@@ -13,10 +13,10 @@
 		}
 	}
 ?>
-<!-- You can start editing here. -->
 
           <?php if ('open' == $post->comment_status) : ?>
             <?php if ($comments) : ?>
+              <div class="item" id="comments"></div>
               <?php foreach ($comments as $comment) : ?>
                 <div class="item" id="comment-<?php comment_ID() ?>">
                   <div class="side left">
@@ -34,7 +34,7 @@
               <?php endforeach; ?>
             <?php endif; ?>
             <div class="item">
-              <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+              <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="respond">
                 <div class="side left">
                   <?php if ( $user_ID ) : ?>
                     logged in as<br/>
