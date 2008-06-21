@@ -2,6 +2,6 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 
 It automatically recognises [http://blog.jodies.de/archiv/2004/11/13/recent-comments/ Get Recent Comments] plugin. This theme requires WordPress 2.3 or later.
 
-[http://www.freewordpressthemes.com/themes/3166/ Download]
+Download from [http://www.freewordpressthemes.com/themes/3166/ Free WordPress Themes]
 
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
