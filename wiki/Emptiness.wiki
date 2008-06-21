@@ -4,4 +4,6 @@ It automatically recognises [http://blog.jodies.de/archiv/2004/11/13/recent-comm
 
 This theme requires WordPress 2.3 or later.
 
+Download from [http://www.freewordpressthemes.com/themes/3166/ Free WordPress Themes]
+
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
