@@ -5,7 +5,7 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 This theme requires WordPress 2.3 or later.
 
 Change Notes:
-0.2 - Widgetised the sidebars: header left, header right, body right, and post left.
-0.1 - Initial release.
+  * 0.2 - Widgetised the sidebars: header left, header right, body right, and post left.
+  * 0.1 - Initial release.
 
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
