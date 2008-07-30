@@ -10,6 +10,8 @@
                   by <?php the_author() ?><br/>
                   <?php comments_popup_link('leave a comment', '1 comment', '% comments'); ?>
                   <?php edit_post_link('edit', '', ''); ?><br/>
+                  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Post Left Sidebar') ) : ?>
+                  <?php endif; ?>
                 </div>
                 <div class="main">
                   <h2><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>

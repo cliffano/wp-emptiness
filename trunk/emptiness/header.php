@@ -33,25 +33,29 @@
         </div>
         <div class="item">
           <div class="side left">
-            <ul>
-              <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-              <?php wp_list_pages('title_li='); ?>
-              <li><a href="<?php bloginfo('atom_url'); ?>">Feed</a></li>
-              <li><?php wp_loginout(); ?></li>
-            </ul>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Left Sidebar') ) : ?>
+              <ul>
+                <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+                <?php wp_list_pages('title_li='); ?>
+                <li><a href="<?php bloginfo('atom_url'); ?>">Feed</a></li>
+                <li><?php wp_loginout(); ?></li>
+              </ul>
+            <?php endif; ?>
           </div>
           <div class="main splash">
             &nbsp;
           </div>
           <div class="side right">
-            <h3>Tags</h3>
-            <div>
-              <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
-            </div>
-            <h4>Categories</h4>
-            <ul>
-              <?php wp_list_categories('hierarchical=false&title_li='); ?> 
-            </ul>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Right Sidebar') ) : ?>
+              <h3>Tags</h3>
+              <div>
+                <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
+              </div>
+              <h3>Categories</h3>
+              <ul>
+                <?php wp_list_categories('hierarchical=false&title_li='); ?> 
+              </ul>
+            <?php endif; ?>
           </div>
         </div>
       </div>
