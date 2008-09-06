@@ -27,7 +27,7 @@
           </div>
           <div class="side right">
             <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-              <input type="text" value="search..." name="s" onclick="this.value = ''"/>
+              <div><input type="text" value="search..." name="s" onclick="this.value = ''"/></div>
             </form>
           </div>
         </div>
