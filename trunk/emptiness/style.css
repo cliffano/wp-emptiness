@@ -48,7 +48,8 @@ div.item {
 }
 div.side {
     float: left;
-    margin: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 div.side li {
     list-style-type: none;
@@ -58,10 +59,12 @@ div.side ul {
     padding: 0;
 }
 div.left {
+	margin-right: 20px;
     text-align: right;
     width: 150px;
 }
 div.right {
+	margin-left: 20px;
     text-align: left;
     width: 250px;
 }
