@@ -5,7 +5,7 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 This theme requires WordPress 2.3 or later.
 
 Change Notes:
-  * 0.3.1 - Code is now valid XHTML. Fix for [http://code.google.com/p/bitpress/issues/detail?id=1&can=1 Issue 1] - rendering problem on IE6.
+  * 0.3.1 - Theme is now valid XHTML. Fixed [http://code.google.com/p/bitpress/issues/detail?id=1&can=1 Issue 1] - rendering problem on IE6.
   * 0.2 - Widgetised the sidebars: header left, header right, body right, and post left.
   * 0.1 - Initial release.
 
