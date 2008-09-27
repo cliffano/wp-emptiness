@@ -20,7 +20,7 @@
               <?php foreach ($comments as $comment) : ?>
                 <div class="item" id="comment-<?php comment_ID() ?>">
                   <div class="side left">
-                    <span class="date"><?php comment_date('j M Y, g:ia') ?></span><br/>
+                    <span class="date"><a href="<?php the_permalink(); ?>#comment-<?php comment_ID() ?>"><?php comment_date('j M Y, g:ia') ?></a></span><br/>
                     by <?php comment_author_link() ?><br/>
                     <?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?><br/>
                     <?php edit_comment_link('edit', '', ''); ?><br/>
