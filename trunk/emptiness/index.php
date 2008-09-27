@@ -7,7 +7,7 @@
                 <div class="side left">
                   <span class="date"><?php the_time('j M Y, g:ia') ?></span><br/>
                   <span class="labels"><?php the_category(' ') ?><?php the_tags(': ', ' '); ?></span><br/>
-                  by <?php the_author() ?><br/>
+                  by <?php the_author_posts_link(); ?><br/>
                   <?php comments_popup_link('leave a comment', '1 comment', '% comments'); ?>
                   <?php edit_post_link('edit', '', ''); ?><br/>
                   <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Post Left Sidebar') ) : ?>
