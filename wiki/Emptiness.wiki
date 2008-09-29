@@ -6,9 +6,9 @@ This theme requires WordPress 2.3 or later.
 
 Change Notes:
   * 0.4
-    * [http://code.google.com/p/bitpress/issues/detail?id=2 Issue 2] Comment permalink on comment date.
-    * [http://code.google.com/p/bitpress/issues/detail?id=3 Issue 3] Comment gravatars are linked to commenter's URL.
-    * [http://code.google.com/p/bitpress/issues/detail?id=4 Issue 4] Added gravatar to post details.
+    * [http://code.google.com/p/bitpress/issues/detail?id=2 Issue 2] Comment date becomes permalink.
+    * [http://code.google.com/p/bitpress/issues/detail?id=3 Issue 3] Comment gravatar is linked to commenter's URL.
+    * [http://code.google.com/p/bitpress/issues/detail?id=4 Issue 4] Added author gravatar to post details.
     * [http://code.google.com/p/bitpress/issues/detail?id=5 Issue 5] Post author name is linked to author posts URL.
   * 0.3.1
     * Theme is now valid XHTML.
