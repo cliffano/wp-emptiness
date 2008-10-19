@@ -5,6 +5,8 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 This theme requires WordPress 2.3 or later.
 
 Change Notes:
+  * 0.5
+    * Added limited microformat support (fn, url) on post and comment authors.
   * 0.4
     * [http://code.google.com/p/bitpress/issues/detail?id=2 Issue 2] Comment date becomes permalink.
     * [http://code.google.com/p/bitpress/issues/detail?id=3 Issue 3] Comment gravatar is linked to commenter's URL.
