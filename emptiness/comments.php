@@ -19,10 +19,16 @@
               <div class="item" id="comments"></div>
               <?php foreach ($comments as $comment) : ?>
                 <div class="item" id="comment-<?php comment_ID() ?>">
-                  <div class="side left">
+                  <div class="vcard side left">
                     <span class="date"><a href="<?php the_permalink(); ?>#comment-<?php comment_ID() ?>"><?php comment_date('j M Y, g:ia') ?></a></span><br/>
-                    by <?php comment_author_link() ?><br/>
-                    <a href="<?php comment_author_url(); ?>"><?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?></a><br/>
+                    by
+                    <?php if ($comment->comment_author_url) : ?>
+	                    <span class="fn"><a class="url" href="<?php comment_author_url(); ?>"><?php comment_author() ?></a></span><br/>
+	                    <a href="<?php comment_author_url(); ?>"><?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?></a><br/>
+                    <?php else : ?>
+	                    <span class="fn"><?php comment_author() ?></span><br/>
+	                    <?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?><br/>
+                    <?php endif; ?>
                     <?php edit_comment_link('edit', '', ''); ?><br/>
                   </div>
                   <div class="main">
