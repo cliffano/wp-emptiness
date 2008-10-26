@@ -4,11 +4,11 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 
 This theme requires WordPress 2.3 or later.
 ==Widget Sidebars==
-There are 4 widget sidebars:
-  * Header Left - the left area of the header (single)
-  * Header Right - the right area of the header (single)
-  * Body Right - the right area of the body (single)
-  * Post Left - the left area of each post (multiple)
+There are 4 types of widget sidebars:
+  * Header Left Sidebar - the left area of the header (single)
+  * Header Right Sidebar - the right area of the header (single)
+  * Body Right Sidebar- the right area of the body (single)
+  * Post Left Sidebar - the left area of each post (multiple)
 ==FAQ==
   * Q: How to change the header image?
     A: Create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg .
