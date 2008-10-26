@@ -1,10 +1,10 @@
-[http://blog.qoqoa.com/index.php?wptheme=Emptiness View Demo] Download from: [http://wordpress.org/extend/themes/emptiness wordpress.org], [http://www.freewordpressthemes.com/themes/3166/ freewordpressthemes.com] 
-
 Emptiness is a minimalist WordPress theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS. It automatically recognises [http://blog.jodies.de/archiv/2004/11/13/recent-comments/ Get Recent Comments] plugin.
+
+[http://blog.qoqoa.com/index.php?wptheme=Emptiness View Demo] Download from: [http://wordpress.org/extend/themes/emptiness wordpress.org], [http://www.freewordpressthemes.com/themes/3166/ freewordpressthemes.com] 
 
 This theme requires WordPress 2.3 or later.
 
-Change Notes:
+==Change Notes==
   * 0.5
     * Added limited microformat support (fn, url) on post and comment authors.
   * 0.4
@@ -20,4 +20,5 @@ Change Notes:
   * 0.1
     * Initial release.
 
+==Screenshots==
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
