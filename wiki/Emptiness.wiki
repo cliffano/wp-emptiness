@@ -32,3 +32,4 @@ There are 4 types of widget sidebars:
 
 ==Screenshots==
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
+http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
