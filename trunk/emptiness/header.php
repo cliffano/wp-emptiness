@@ -38,6 +38,9 @@
                 <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
                 <?php wp_list_pages('title_li='); ?>
                 <li><a href="<?php bloginfo('atom_url'); ?>">Feed</a></li>
+                <?php if (is_user_logged_in()) { ?>
+                	<a href="<?php echo get_option('siteurl'); ?>/wp-admin/">Admin</a>
+                <?php } ?>
                 <li><?php wp_loginout(); ?></li>
               </ul>
             <?php endif; ?>
