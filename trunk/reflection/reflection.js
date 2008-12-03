@@ -4,17 +4,17 @@
  */
 function EffectMgr(image, height) {
 	this.image = image;
+	this.raphael = null;
 	if (height == null) {
-		this.raphael = new Raphael(this.image.parentNode, this.image.width, this.image.height * 2);
+		this.reflectionHeight = this.image.height;
 	} else {
 		if (height.indexOf("%") == height.length - 1) {
 			this.reflectionHeight = (height.replace("%", "")) * this.image.height / 100;
-			this.raphael = new Raphael(this.image.parentNode, this.image.width, this.image.height + this.reflectionHeight);
 		} else {
 			this.reflectionHeight = height.replace("px", "") * 1;
-			this.raphael = new Raphael(this.image.parentNode, this.image.width, this.image.height + this.reflectionHeight);
 		}
 	}
+	this.raphael = new Raphael(this.image.parentNode, this.image.width, this.image.height + this.reflectionHeight);
 }
 EffectMgr.prototype.displayDefaultReflection = function() {
 	this.raphael.image(this.image.src, 0, 0, this.image.width, this.image.height);
@@ -28,9 +28,11 @@ EffectMgr.prototype.displayGradientReflection = function(color) {
 
 /*****************************************************************
  * ImageMgr processes the images within a document, and applies
- * the effect(s) according to the image class name.
+ * the reflection effect.
  */
-function ImageMgr() {
+function ImageMgr(gradientBgColor, gradientHeight) {
+	this.gradientBgColor = gradientBgColor;
+	this.gradientHeight = gradientHeight;
 }
 ImageMgr.prototype.process = function(images) {
 	for (var i = 0; i < images.length; i++) {
@@ -40,19 +42,21 @@ ImageMgr.prototype.process = function(images) {
 		    	) {
 		    var classNames = images[i].className.split(" ");
 		    for (var j = 0; j < classNames.length; j++) {
-		    	if (classNames[j].indexOf("reflection") == 0) {
+		    	if (classNames[j] == "reflection") {
 					images[i].style.display = "none";
-					var details = classNames[j].split("-");
-					if (details.length == 3) {
-						(new EffectMgr(images[i], details[2])).displayGradientReflection(details[1]);
-					} else {
-						(new EffectMgr(images[i])).displayDefaultReflection();
-					}
+					images[i].parentNode.className = images[i].className;
+				    if (this.gradientBgColor != null && this.gradientHeight != null) {
+				    	(new EffectMgr(images[i], this.gradientHeight)).displayGradientReflection(this.gradientBgColor);
+				    } else {
+				    	(new EffectMgr(images[i])).displayDefaultReflection();
+				    }
 		    	}
 		    }
 		}
 	}
 }
 
+//var imageMgr = new ImageMgr("#000", "100%");
+//var imageMgr = new ImageMgr("yellow", "80px");
 var imageMgr = new ImageMgr();
 imageMgr.process(document.images);
