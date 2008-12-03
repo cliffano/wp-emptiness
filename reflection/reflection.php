@@ -2,7 +2,7 @@
 /*
 Plugin Name: Reflection
 Plugin URI: http://code.google.com/p/bitpress/wiki/Reflection
-Description: Apply reflection effect to images with specific class value.
+Description: Apply reflection effect to images with 'reflection' as one of the HTML attribute class values.
 Version: 0.1
 Author: Cliffano Subagio
 Author URI: http://blog.qoqoa.com
@@ -11,7 +11,7 @@ Author URI: http://blog.qoqoa.com
 class BitpressReflection {
 
 	function BitpressReflection() {
-		add_action('init', array(&$this, 'init'), 9999);	
+		add_action('init', array(&$this, 'init'), 888);	
 		add_action('wp_head', array(&$this, 'head'), 888);
 		add_action('wp_footer', array(&$this, 'footer'), 888);
 		add_action('admin_menu', array(&$this, 'menu'), 888);
@@ -27,11 +27,11 @@ class BitpressReflection {
 	}
 	
 	function head() {
-		echo "\n" . '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection-raphael.js"></script>' . "\n";
+		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection-raphael.js"></script>';
 	}
 	
 	function footer() {
-		echo "\n" . '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection.js"></script>' . "\n";
+		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection.js"></script>';
 	}
 	
 	function menu() {
@@ -63,7 +63,7 @@ function bitpress_reflection_menu_form() {
 						<b>Gradient Height:</b>
 						<input type="text" id="bitpress_reflection_height" name="bitpress_reflection_height" value="' . get_option('bitpress_reflection_height') . '" size="5"/>
 						<br/>
-						Specify pixels (e.g. 50px, 88px) or percentage (e.g. 80%, 55%), please note that the px or % sign is required.
+						Specify pixels (e.g. 50px, 88px) or percentage (e.g. 80%, 35%), please note that the px or % sign is required.
 						This value determines the height of the gradient reflection, pixels value indicates fixed height, while percentage value is a percentage of the image height.
 					</p>
 				</fieldset>
@@ -76,5 +76,5 @@ function bitpress_reflection_menu_form() {
 		');
 }
 
-$com_qoqoa_reflection = new BitpressReflection();
+$bitpress_reflection = new BitpressReflection();
 ?>
