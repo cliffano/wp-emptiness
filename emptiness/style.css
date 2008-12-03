@@ -125,25 +125,28 @@ img.centered {
     margin-right: auto;
 }
 img.alignright {
-    padding: 4px;
+    padding: 8px;
     margin: 0 0 2px 7px;
     display: inline;
 }
 img.alignleft {
-    padding: 4px;
+    padding: 8px;
     margin: 0 7px 2px 0;
     display: inline;
 }
 .alignright {
     float: right;
+    padding: 0 0 8px 8px;
 }
 .alignleft {
     float: left;
+    padding: 0 8px 8px 0;
 }
 .aligncenter {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0 8px 0 8px;
 }
 .wp-caption {
 	border: 1px solid #ddd;
