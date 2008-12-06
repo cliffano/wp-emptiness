@@ -1,5 +1,7 @@
 Reflection is a WordPress plugin which applies reflection effect to images with *reflection* as one of the HTML attribute class values.
 
+This plugin uses [http://raphaeljs.com/ Raphael] JavaScript library to create the reflection effect.
+
 [http://todo View Demo] Download from: TBA (plugin has been submitted to WP codex, waiting for approval).
 
 ==Installation==
