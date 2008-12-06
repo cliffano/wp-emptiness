@@ -11,7 +11,7 @@ Gradient reflection
 
 http://bitpress.googlecode.com/svn/wiki/images/reflection_gradient.jpg
 
-Plugin settings form on WordPress admin
+Plugin settings page on WordPress admin
 
 http://bitpress.googlecode.com/svn/wiki/images/reflection_admin.jpg
 
