@@ -5,6 +5,11 @@ Reflection is a WordPress plugin applies reflection effect to images with 'refle
 ==Screenshots==
 http://bitpress.googlecode.com/svn/wiki/images/reflection_default.jpg
 http://bitpress.googlecode.com/svn/wiki/images/reflection_gradient.jpg
+http://bitpress.googlecode.com/svn/wiki/images/reflection_admin.jpg
+
+==FAQ==
+  * Q: My blog doesn't have white background and the reflection looks out of place.
+    A: Create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg .
 
 ==Types==
   * Default reflection
