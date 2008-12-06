@@ -3,18 +3,25 @@ Reflection is a WordPress plugin applies reflection effect to images with 'refle
 [http://todo View Demo] Download from: [http://todo]
 
 ==Screenshots==
+Default reflection
+
 http://bitpress.googlecode.com/svn/wiki/images/reflection_default.jpg
+
+Gradient reflection
+
 http://bitpress.googlecode.com/svn/wiki/images/reflection_gradient.jpg
+
+Plugin settings form on WordPress admin
+
 http://bitpress.googlecode.com/svn/wiki/images/reflection_admin.jpg
 
-==FAQ==
-  * Q: My blog doesn't have white background and the reflection looks out of place.
-    A: Create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg .
-
-==Types==
+==Reflection Types==
   * Default reflection
+    This reflection is a direct mirror of the original image, with .5 opacity. The reflection height is identical to the original image.
+  * Gradient reflection with pixels height
+    When you specify pixels gradient reflection height on the settings page, the reflection will take the specified pixels value. This reflection height is always the same between all reflected images on the blog.
   * Gradient reflection with percentage reflection height
-  * Gradient reflection with fixed pixels height
+    When you specify a percentage gradient reflection height on the settings page, the reflection will take a specified percentage of the original image. This reflection height differs between images, depending on the height of each original image on the blog.
 
 ==Changelog==
   * 0.1
