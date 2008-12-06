@@ -1,10 +1,9 @@
 /*****************************************************************
- * EffectMgr provides functions to apply image effects using
+ * BitpressEffectMgr provides functions to apply image effects using
  * Raphael http://raphaeljs.com .
  */
-function EffectMgr(image, height) {
+function BitpressEffectMgr(image, height) {
 	this.image = image;
-	this.raphael = null;
 	if (height == null) {
 		this.reflectionHeight = this.image.height;
 	} else {
@@ -16,25 +15,25 @@ function EffectMgr(image, height) {
 	}
 	this.raphael = new Raphael(this.image.parentNode, this.image.width, this.image.height + this.reflectionHeight);
 }
-EffectMgr.prototype.displayDefaultReflection = function() {
+BitpressEffectMgr.prototype.displayDefaultReflection = function() {
 	this.raphael.image(this.image.src, 0, 0, this.image.width, this.image.height);
-	this.raphael.image(this.image.src, 0, this.image.height - 1, this.image.width, this.image.height).scale(1, -1).attr({opacity: .5});
+	this.raphael.image(this.image.src, 0, this.image.height, this.image.width, this.image.height).scale(1, -1).attr({opacity: .5});
 }
-EffectMgr.prototype.displayGradientReflection = function(color) {
+BitpressEffectMgr.prototype.displayGradientReflection = function(color) {
 	this.displayDefaultReflection();
 	var gradient = { type: "linear", dots: [{color: color, opacity: .5}, {color: color}], vector: [0, 0, 0, "100%"] };
-    this.raphael.rect(-1, this.image.height - 1, this.image.width + 2, this.reflectionHeight + 2).attr({gradient: gradient});
+    this.raphael.rect(0, this.image.height, this.image.width, this.reflectionHeight).attr({gradient: gradient, stroke: null});
 }
 
 /*****************************************************************
- * ImageMgr processes the images within a document, and applies
+ * BitpressImageMgr processes the images within a document, and applies
  * the reflection effect.
  */
-function ImageMgr(gradientBgColor, gradientHeight) {
+function BitpressImageMgr(gradientBgColor, gradientHeight) {
 	this.gradientBgColor = gradientBgColor;
 	this.gradientHeight = gradientHeight;
 }
-ImageMgr.prototype.process = function(images) {
+BitpressImageMgr.prototype.process = function(images) {
 	for (var i = 0; i < images.length; i++) {
 		if ((images[i].className.indexOf("reflection") >= 0) &&
 		    	(images[i].parentNode.tagName.toLowerCase() == "p" ||
@@ -46,17 +45,12 @@ ImageMgr.prototype.process = function(images) {
 					images[i].style.display = "none";
 					images[i].parentNode.className = images[i].className;
 				    if (this.gradientBgColor != null && this.gradientHeight != null) {
-				    	(new EffectMgr(images[i], this.gradientHeight)).displayGradientReflection(this.gradientBgColor);
+				    	(new BitpressEffectMgr(images[i], this.gradientHeight)).displayGradientReflection(this.gradientBgColor);
 				    } else {
-				    	(new EffectMgr(images[i])).displayDefaultReflection();
+				    	(new BitpressEffectMgr(images[i])).displayDefaultReflection();
 				    }
 		    	}
 		    }
 		}
 	}
 }
-
-//var imageMgr = new ImageMgr("#000", "100%");
-//var imageMgr = new ImageMgr("yellow", "80px");
-var imageMgr = new ImageMgr();
-imageMgr.process(document.images);
