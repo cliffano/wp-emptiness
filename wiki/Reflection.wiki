@@ -1,6 +1,27 @@
-Reflection is a WordPress plugin applies reflection effect to images with 'reflection' as one of the HTML attribute class values.
+Reflection is a WordPress plugin which applies reflection effect to images with *reflection* as one of the HTML attribute class values.
 
-[http://todo View Demo] Download from: [http://todo]
+[http://todo View Demo] Download from: TBA (plugin has been submitted to WP codex, waiting for approval).
+
+==Installation==
+Unzip reflection-version.zip to wp-content/plugins/ .
+
+==Usage==
+  * If you're using WordPress rich editor to add an image to your blog post, you only have to add *reflection* to the image class value via Advanced Settings tab on an image edit popup. Note that class values are space separated.
+  * If you're typing up the HTML manually, then there are several rules you must follow:
+    # img tag class attribute should have *reflection* value
+    # img tag must be appended by either div tag or p tag.
+    # img tag must have width and height attributes.
+    For example:
+{{{
+<p>
+  <img class="alignnone reflection" src="blah.jpg" width="130" height="130"/>
+</p>
+}}}
+{{{
+<div>
+  <img class="foo reflection bar" src="foobar.jpg" width="380" height="285"/>
+</div>
+}}}
 
 ==Screenshots==
 Default reflection
