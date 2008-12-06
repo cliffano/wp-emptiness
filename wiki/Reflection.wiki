@@ -24,6 +24,7 @@ Unzip reflection-version.zip to wp-content/plugins/ .
   <img class="foo reflection bar" src="foobar.jpg" width="380" height="285"/>
 </div>
 }}}
+  * You can configure gradient reflection via admin -> Settings tab -> Reflection menu.
 
 ==Screenshots==
 Default reflection
