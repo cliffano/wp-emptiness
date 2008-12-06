@@ -28,12 +28,20 @@ class BitpressReflection {
 	
 	function head() {
 		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection-raphael.js"></script>';
-	}
-	
-	function footer() {
 		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection.js"></script>';
 	}
 	
+	function footer() {
+		if (get_option('bitpress_reflection_bgcolor') != null &&
+				trim(get_option('bitpress_reflection_bgcolor')) != "" &&
+				get_option('bitpress_reflection_height') != null &&
+				trim(get_option('bitpress_reflection_height')) != "") {
+			echo '<script type="text/javascript">new BitpressImageMgr("' . wp_specialchars(get_option('bitpress_reflection_bgcolor')) . '", "' . wp_specialchars(get_option('bitpress_reflection_height')) . '").process(document.images);</script>';
+		} else {
+			echo '<script type="text/javascript">new BitpressImageMgr().process(document.images);</script>';
+		}
+	}
+
 	function menu() {
 		add_options_page(
 			__('Reflection', 'bitpress_reflection')
