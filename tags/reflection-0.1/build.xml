@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<project name="bitpress" basedir=".">
+	
+	<tstamp><format property="TSTAMP" pattern="yyyyMMddhhmmss"/></tstamp>
+	<property name="version" value="${TSTAMP}"/>
+	<property name="dist.dir" value="dist"/>
+
+	<target name="--init">
+		<mkdir dir="${dist.dir}"/>
+	</target>
+		
+	<target name="clean" description="">
+		<delete dir="${dist.dir}"/>
+	</target>
+	
+	<target name="emptiness-dist" depends="--init" description="">
+		<zip destfile="${dist.dir}/emptiness-${version}.zip">
+			<zipfileset dir="." includes="emptiness/*.*"/>
+		</zip>
+	</target>
+
+	<target name="reflection-dist" depends="--init" description="">
+		<zip destfile="${dist.dir}/reflection-${version}.zip">
+			<zipfileset dir="." includes="reflection/*.*"/>
+		</zip>
+	</target>
+
+</project>
