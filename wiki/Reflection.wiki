@@ -7,7 +7,7 @@ Default reflection
 
 http://bitpress.googlecode.com/svn/wiki/images/reflection_default.jpg
 
-Gradient reflection
+Gradient reflection (best on a dark background)
 
 http://bitpress.googlecode.com/svn/wiki/images/reflection_gradient.jpg
 
