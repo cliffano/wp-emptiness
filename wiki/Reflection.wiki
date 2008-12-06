@@ -1,0 +1,16 @@
+Reflection is a WordPress plugin applies reflection effect to images with 'reflection' as one of the HTML attribute class values.
+
+[http://todo View Demo] Download from: [http://todo]
+
+==Screenshots==
+http://bitpress.googlecode.com/svn/wiki/images/reflection_default.jpg
+http://bitpress.googlecode.com/svn/wiki/images/reflection_gradient.jpg
+
+==Types==
+  * Default reflection
+  * Gradient reflection with percentage reflection height
+  * Gradient reflection with fixed pixels height
+
+==Changelog==
+  * 0.1
+    * Initial release.
