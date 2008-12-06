@@ -22,7 +22,7 @@ BitpressEffectMgr.prototype.displayDefaultReflection = function() {
 BitpressEffectMgr.prototype.displayGradientReflection = function(color) {
 	this.displayDefaultReflection();
 	var gradient = { type: "linear", dots: [{color: color, opacity: .5}, {color: color}], vector: [0, 0, 0, "100%"] };
-    this.raphael.rect(0, this.image.height, this.image.width, this.reflectionHeight).attr({gradient: gradient, stroke: null});
+    this.raphael.rect(0, this.image.height, this.image.width, this.reflectionHeight + 1).attr({gradient: gradient, stroke: null});
 }
 
 /*****************************************************************
