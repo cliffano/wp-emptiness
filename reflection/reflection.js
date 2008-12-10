@@ -35,22 +35,30 @@ function BitpressImageMgr(gradientBgColor, gradientHeight) {
 }
 BitpressImageMgr.prototype.process = function(images) {
 	for (var i = 0; i < images.length; i++) {
-		if ((images[i].className.indexOf("reflection") >= 0) &&
-		    	(images[i].parentNode.tagName.toLowerCase() == "p" ||
-		    	images[i].parentNode.tagName.toLowerCase() == "div") 
-		    	) {
-		    var classNames = images[i].className.split(" ");
-		    for (var j = 0; j < classNames.length; j++) {
-		    	if (classNames[j] == "reflection") {
-					images[i].style.display = "none";
-					images[i].parentNode.className = images[i].className;
-				    if (this.gradientBgColor != null && this.gradientHeight != null) {
-				    	(new BitpressEffectMgr(images[i], this.gradientHeight)).displayGradientReflection(this.gradientBgColor);
-				    } else {
-				    	(new BitpressEffectMgr(images[i])).displayDefaultReflection();
-				    }
-		    	}
-		    }
-		}
+	    var classNames = images[i].className.split(" ");
+	    for (var j = 0; j < classNames.length; j++) {
+	    	if (classNames[j] == "reflection") {
+				this.applyEffect(images[i]);
+				images[i].width = 0;
+				images[i].height = 0;
+	    	}
+	    }
 	}
+}
+BitpressImageMgr.prototype.applyEffect = function(image) {
+	this.wrap(image);
+    if (this.gradientBgColor != null && this.gradientHeight != null) {
+    	(new BitpressEffectMgr(image, this.gradientHeight)).displayGradientReflection(this.gradientBgColor);
+    } else {
+    	(new BitpressEffectMgr(image)).displayDefaultReflection();
+    }
+}
+BitpressImageMgr.prototype.wrap = function(image) {
+	var div = document.createElement("div");
+	var parent = image.parentNode;
+	parent.replaceChild(div, image);
+	div.appendChild(image);
+	image.style.visibility = "hidden";
+	//image.style.display = "none";
+	image.parentNode.className = image.className;
 }
