@@ -125,13 +125,9 @@ img.centered {
     margin-right: auto;
 }
 img.alignright {
-    padding: 4px;
-    margin: 0 0 8px 8px;
     display: inline;
 }
 img.alignleft {
-    padding: 4px;
-    margin: 0 8px 8px 0;
     display: inline;
 }
 .alignright {
