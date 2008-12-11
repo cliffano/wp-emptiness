@@ -3,7 +3,7 @@
 Plugin Name: Reflection
 Plugin URI: http://code.google.com/p/bitpress/wiki/Reflection
 Description: Apply reflection effect to images with 'reflection' as one of the HTML attribute class values.
-Version: 0.1
+Version: 0.2
 Author: Cliffano Subagio
 Author URI: http://blog.qoqoa.com
 */
