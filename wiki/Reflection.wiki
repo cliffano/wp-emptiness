@@ -1,6 +1,6 @@
 Reflection is a WordPress plugin which applies reflection effect to images with *reflection* as one of the HTML attribute class values.
 
-This plugin uses [http://raphaeljs.com/ Raphael] JavaScript library to create the reflection effect.
+This plugin uses [http://raphaeljs.com/ Raphael] JavaScript library to create the reflection effect, hence this plugin only supports Firefox 3.0+, Safari 3.0+, Opera 9.5+, and Internet Explorer 6.0+ .
 
 [http://blog.qoqoa.com/2008/12/06/testing-reflection-plugin/ View Demo] Download from: TBA (still requesting svn plugin host access).
 
@@ -11,7 +11,6 @@ Unzip reflection-version.zip to wp-content/plugins/ .
   * If you're using WordPress rich editor to add an image to your blog post, you only have to add *reflection* to the image class value via Advanced Settings tab on an image edit popup. Note that class values are space separated.
   * If you're typing up the HTML manually, then there are several rules you must follow:
     # img tag class attribute should have *reflection* value
-    # img tag must be appended by either div tag or p tag.
     # img tag must have width and height attributes.
     For example:
 {{{
