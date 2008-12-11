@@ -47,5 +47,7 @@ http://bitpress.googlecode.com/svn/wiki/images/reflection_admin.jpg
     When you specify a percentage gradient reflection height on the settings page, the reflection will take a specified percentage of the original image. This reflection height differs between images, depending on the height of each original image on the blog.
 
 ==Changelog==
+  * 0.2
+    * Added auto div wrapper insertion. Removed div / p parent tag requirement.
   * 0.1
     * Initial release.
