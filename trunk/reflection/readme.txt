@@ -3,7 +3,7 @@ Tags: reflection, image, effect
 Contributors: cliffano
 Requires at least: 2.3
 Tested up to: 2.7.0
-Stable tag: trunk
+Stable tag: 0.2
 
 Apply reflection effect to images with 'reflection' as one of the HTML attribute class values.
 
