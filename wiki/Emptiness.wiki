@@ -25,7 +25,7 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
-  * 0.7
+  * 0.7.1
     * Adjusted margin and padding for aligned elements.
   * 0.6
     * Added link to WordPress admin, only displayed when user is logged in.
