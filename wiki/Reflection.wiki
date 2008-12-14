@@ -6,7 +6,8 @@ This plugin uses [http://raphaeljs.com/ Raphael] JavaScript library to create th
 [http://wordpress.org/extend/plugins/reflection/ Download]
 
 ==Installation==
-Unzip reflection-version.zip to wp-content/plugins/ .
+  # Unzip reflection-version.zip to wp-content/plugins/ .
+  # Go to 'Manage Plugins' page and activate Reflection plugin.
 
 ==Usage==
   * If you're using WordPress rich editor to add an image to your blog post, you only have to add *reflection* to the image class value via Advanced Settings tab on an image edit popup. Note that class values are space separated.
