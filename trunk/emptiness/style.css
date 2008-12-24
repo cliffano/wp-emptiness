@@ -92,6 +92,9 @@ blockquote, div.comment {
     color: #666666;
     padding: 10px;
 }
+div.comment.highlight {
+	border-left: 5px solid #cccccc;
+}
 div.splash {
     background-image: url(header.jpg);
     height: 265px;

@@ -32,7 +32,7 @@
                     <?php edit_comment_link('edit', '', ''); ?><br/>
                   </div>
                   <div class="main">
-                    <div class="comment">
+                    <div class="comment<?php if ($comment->user_id == $post->post_author) { echo ' highlight'; }; ?>">
                       <?php comment_text() ?>
                     </div>
                   </div>
