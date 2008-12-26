@@ -45,7 +45,7 @@
                   <?php if ( $user_ID ) : ?>
                     logged in as<br/>
                     <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a><br/>
-                    <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout">log out</a><br/>
+                    <a href="<?php echo wp_logout_url(); ?>">log out</a><br/>
                   <?php else : ?>
                     *name<br/>
                     <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="17" tabindex="1" /><br/>
