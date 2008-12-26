@@ -10,6 +10,12 @@
                 <?php get_recent_comments(); ?>
               </ul>
             <?php } ?>
+            <?php if (function_exists('mdv_most_commented')) { ?>
+              <h3>Most Commented Posts</h3>
+              <ul>
+                <?php mdv_most_commented(10, '<li>', '</li>', false); ?>
+              </ul>
+            <?php } ?>
 	        <h3>Linkroll</h3>
 		    <ul>
 			  <?php get_links(-1, '<li>', '</li>', ' - '); ?>
