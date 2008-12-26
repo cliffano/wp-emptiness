@@ -113,6 +113,12 @@ h3 {
 img {
     border: 0;
 }
+hr {
+	color: #eeeeee;
+	height: 1px;
+	margin: 15px auto 15px auto;
+	width: 80%;
+}
 li.cat-item {
     display: inline;
 }
