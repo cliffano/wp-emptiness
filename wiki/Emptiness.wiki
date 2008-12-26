@@ -26,11 +26,11 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
-  * 0.7.1
+  * 0.7.2
     * Adjusted margin and padding for aligned elements.
     * Added Most Commented Posts to body right sidebar.
     * [http://code.google.com/p/bitpress/issues/detail?id=6 Issue 6] Added border left to indicate comments made by post author.
-    * [http://code.google.com/p/bitpress/issues/detail?id=8 Issue 8] Added language attributes to <html> tag.
+    * [http://code.google.com/p/bitpress/issues/detail?id=8 Issue 8] Added language attributes to html tag.
   * 0.6
     * Added link to WordPress admin, only displayed when user is logged in.
   * 0.5
