@@ -1,4 +1,4 @@
-Emptiness is a minimalist WordPress theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS. It automatically recognises [http://blog.jodies.de/archiv/2004/11/13/recent-comments/ Get Recent Comments] plugin.
+Emptiness is a minimalist WordPress theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS. It automatically recognises [http://blog.jodies.de/archiv/2004/11/13/recent-comments/ Get Recent Comments] and [http://wordpress.org/extend/plugins/most-commented/ Most Commented] plugins.
 
 [http://blog.qoqoa.com/index.php?wptheme=Emptiness View Demo]
 [http://wordpress.org/extend/themes/emptiness Download]
@@ -28,6 +28,9 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 ==Changelog==
   * 0.7.1
     * Adjusted margin and padding for aligned elements.
+    * Added Most Commented Posts to body right sidebar.
+    * [http://code.google.com/p/bitpress/issues/detail?id=6 Issue 6] Added border left to indicate comments made by post author.
+    * [http://code.google.com/p/bitpress/issues/detail?id=8 Issue 8] Added language attributes to <html> tag.
   * 0.6
     * Added link to WordPress admin, only displayed when user is logged in.
   * 0.5
