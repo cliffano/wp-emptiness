@@ -16,6 +16,8 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
     A: Open up emptiness/index.php file. Find the word "the_author_posts_link()", that's pretty much the post details area on the left of each post. You can delete the lines that you don’t want there.
   * Q: Why is there a huge space between the header and the post?
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead.
+  * Q: On IE6, why does the right sidebar get pushed down below the body?
+    A: This happens when you have a post containing text or image wider than the width of the body (by default it's 500px). So you can either modify the wide content to fit 500px, or modify style.css and assign larger width (width attribute for div#container and div.main).
 
 ==Widget Sidebars==
 There are 4 types of widget sidebars:
