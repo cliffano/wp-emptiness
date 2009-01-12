@@ -11,7 +11,7 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
 
 ==FAQ==
   * Q: How to change the header image?
-    A: Create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg .
+    A: Create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg . However, be careful not to overwrite your own header.jpg when you upgrade the theme later on in the future. You might be interested to learn [http://blog.qoqoa.com/2009/01/12/a-cleaner-way-to-customise-wordpress-themes-styles/ A Cleaner Way To Customise WordPress Themes Styles].
   * Q: How to remove "by author_name" and other post details on the left side of each post?
     A: Open up emptiness/index.php file. Find the word "the_author_posts_link()", that's pretty much the post details area on the left of each post. You can delete the lines that you don’t want there.
   * Q: Why is there a huge space between the header and the post?
