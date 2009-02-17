@@ -28,6 +28,8 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 0.9
+    * [http://code.google.com/p/bitpress/issues/detail?id=11 Issue 11] Fixed admin link tag.
   * 0.8
     * Added Most Commented Posts to body right sidebar.
     * [http://code.google.com/p/bitpress/issues/detail?id=6 Issue 6] Added border left to indicate comments made by post author.
