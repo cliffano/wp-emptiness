@@ -92,6 +92,36 @@ blockquote, div.comment {
     color: #666666;
     padding: 10px;
 }
+div.depth1 {
+	margin-left: 0px;
+}
+div.depth2 {
+	margin-left: 15px;
+}
+div.depth3 {
+	margin-left: 30px;
+}
+div.depth4 {
+	margin-left: 45px;
+}
+div.depth5 {
+	margin-left: 60px;
+}
+div.depth6 {
+	margin-left: 75px;
+}
+div.depth7 {
+	margin-left: 90px;
+}
+div.depth8 {
+	margin-left: 105px;
+}
+div.depth9 {
+	margin-left: 120px;
+}
+div.depth10 {
+	margin-left: 135px;
+}
 div.comment.highlight {
 	border-left: 5px solid #cccccc;
 }
@@ -175,4 +205,3 @@ img.alignleft {
 	padding: 0 4px 5px;
 	margin: 0;
 }
-
