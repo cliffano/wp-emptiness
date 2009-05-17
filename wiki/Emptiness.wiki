@@ -3,7 +3,8 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 [http://blog.qoqoa.com/index.php?wptheme=Emptiness View Demo]
 [http://wordpress.org/extend/themes/emptiness Download]
 
-This theme requires WordPress 2.3 or later.
+Starting version 1.0, this theme requires WordPress 2.7 or later.
+Older versions require WordPress 2.3 or later.
 
 ==Screenshots==
 http://bitpress.googlecode.com/svn/wiki/images/emptiness.jpg
@@ -28,6 +29,10 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.0
+    * Added threaded comments.
+    * [http://code.google.com/p/bitpress/issues/detail?id=8 Issue 8] Added xhtml doctype to language_attributes call.
+    * Changed page title to display post title followed by blog name.
   * 0.9
     * [http://code.google.com/p/bitpress/issues/detail?id=11 Issue 11] Fixed admin link tag.
   * 0.8
