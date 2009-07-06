@@ -2,7 +2,7 @@
 Theme Name: Emptiness
 Theme URI: http://code.google.com/p/bitpress/wiki/Emptiness
 Description: A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
-Version: 1.0
+Version: 1.1
 Author: Cliffano Subagio
 Author URI: http://blog.qoqoa.com
 Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, microformats 
@@ -126,7 +126,6 @@ div.comment.highlight {
 	border-left: 5px solid #cccccc;
 }
 div.splash {
-    background-image: url(header.jpg);
     height: 265px;
 }
 input {

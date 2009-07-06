@@ -28,5 +28,25 @@ function mytheme_comment($comment, $args, $depth) {
 	    </div>
 	  </div>
 <?php
-  }
+}
+define('HEADER_TEXTCOLOR', '000000');
+define('HEADER_IMAGE', '%s/header.jpg');
+define('HEADER_IMAGE_WIDTH', 500);
+define('HEADER_IMAGE_HEIGHT', 265);
+function header_style() {
+?>
+<style type="text/css">
+div.splash {
+	background-image: url('<?php header_image() ?>');
+}
+</style>
+<?php
+}
+function emptiness_admin_header_style() {
+?>
+<style type="text/css">
+</style>
+<?php
+}
+add_custom_image_header('header_style', 'emptiness_admin_header_style');
 ?>
