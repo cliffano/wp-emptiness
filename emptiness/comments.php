@@ -14,7 +14,7 @@
 	}
 ?>
 
-          <?php if ('open' == $post->comment_status) : ?>
+          <?php if ('open' == $post->comment_status && 'closed' != get_option('default_comment_status')) : ?>
             <?php if ($comments) : ?>
               <div class="item" id="comments"></div>
               <?php wp_list_comments(array('style' => 'div', 'type' => 'all', 'callback' => 'mytheme_comment', 'post' => $post)); ?>
