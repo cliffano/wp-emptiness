@@ -30,6 +30,8 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.2
+    * Added global disabled comment handling.
   * 1.1
     * Added custom image header.
   * 1.0
