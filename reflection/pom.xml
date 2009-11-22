@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>wordpress</groupId>
+  <artifactId>reflection</artifactId>
+  <version>0.3-SNAPSHOT</version>
+  <description>
+    A WordPress plugin which applies reflection effect to images with 'reflection' as one of the HTML attribute class values.
+  </description>
+  <inceptionYear>2008</inceptionYear>
+  <name>Reflection Plugin</name>
+  <parent>
+    <groupId>wordpress</groupId>
+    <artifactId>bitpress</artifactId>
+    <version>0.1</version>
+  </parent>
+  <licenses>
+    <license>
+      <name>GPL License</name>
+      <url>../LICENSE.txt</url>
+    </license>
+  </licenses>
+  <dependencies>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/descriptor.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

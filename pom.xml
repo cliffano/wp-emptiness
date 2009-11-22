@@ -6,9 +6,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>emptiness</module>
-    <!-- 
     <module>reflection</module>
-     -->
   </modules>
   <version>0.1</version>
   <description>A collection of WordPress plugins and themes contributed by Studio Cliffano.</description>
