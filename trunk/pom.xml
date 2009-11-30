@@ -31,6 +31,12 @@
       </notifier>
     </notifiers>
   </ciManagement>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>atlassian-public</id>
+      <url>https://maven.atlassian.com/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
   <distributionManagement>
     <site>
       <id>ayame</id>
