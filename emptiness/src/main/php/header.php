@@ -13,7 +13,7 @@
     <?php wp_get_archives('type=monthly&format=link'); ?>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
-    <!-- Emptiness Theme by Qoqoa - Cliffano Subagio -->
+    <!-- Emptiness Theme by Studio Cliffano -->
   </head>
   <body>
     <div id="container">
@@ -50,16 +50,26 @@
             &nbsp;
           </div>
           <div class="side right">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Right Sidebar') ) : ?>
+            <?php
+              if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Right Sidebar') ) :
+                if ( count(get_tags()) > 0 ) :
+            ?>
               <h3>Tags</h3>
               <div>
                 <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
               </div>
+            <?php
+                endif;
+                if ( count(get_categories) > 0 ) :
+            ?>
               <h3>Categories</h3>
               <ul>
                 <?php wp_list_categories('hierarchical=false&title_li='); ?> 
               </ul>
-            <?php endif; ?>
+            <?php
+                endif;
+              endif;
+            ?>
           </div>
         </div>
       </div>
