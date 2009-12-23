@@ -5,6 +5,9 @@
   </properties>
   <body>
     <release version="1.3-SNAPSHOT" date="current">
+      <action type="add" dev="cliffano">
+        Added tags and categories count checks prior to displaying the tags and categories.
+      </action>
     </release>
     <release version="1.2" date="24-08-2009">
       <action type="add" dev="cliffano">
