@@ -20,6 +20,10 @@ div#container {
     padding: 0 20px 0 20px;
     width: 1020px;
 }
+div#header {
+    position: absolute;
+    top: 10px;
+}
 div#header div.main {
     font-weight: bold;
 }
@@ -29,6 +33,10 @@ div#header div.main a {
 }
 div#header div.main h1 {
     margin: 0;
+}
+div#bodyfooter {
+    position: relative;
+    top: 350px;
 }
 div#body {
     clear: both;
