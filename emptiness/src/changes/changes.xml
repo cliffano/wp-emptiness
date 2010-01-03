@@ -5,6 +5,11 @@
   </properties>
   <body>
     <release version="1.4-SNAPSHOT" date="current">
+    </release>
+    <release version="1.3.2" date="03-01-2010">
+      <action type="add" dev="cliffano">
+        Added print stylesheet that includes posts and comments only.
+      </action>
     </release>  
     <release version="1.3.1" date="03-01-2010">
       <action type="add" dev="cliffano">

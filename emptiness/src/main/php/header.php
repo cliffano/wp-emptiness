@@ -3,8 +3,11 @@
   <head>
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-    <style type="text/css" media="screen">
+    <style type="text/css" media="screen, projection">
       @import url( <?php bloginfo('stylesheet_url'); ?> );
+    </style>
+    <style type="text/css" media="print">
+      @import url( <?php bloginfo('stylesheet_directory'); ?>/print.css );
     </style>
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
