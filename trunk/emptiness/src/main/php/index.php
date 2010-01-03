@@ -19,7 +19,9 @@
                   <div class="main">
                     <h2><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                     <?php the_content('more &raquo;'); ?>
-                    <?php wp_link_pages('before=pages:&next_or_number=number&pagelink=%'); ?>
+                    <div class="nav">
+                      <?php wp_link_pages('before=pages:&next_or_number=number&pagelink=%'); ?>
+                    </div>
                   </div>
                 </div>
               <?php endwhile; ?>
@@ -28,7 +30,7 @@
                 <div class="side left">
                   &nbsp;
                 </div>
-                <div class="main">
+                <div class="main nav">
                   <?php previous_post_link('&larr; %link') ?>&nbsp;&nbsp;<?php next_post_link('%link &rarr;') ?>
                 </div>
               </div>
@@ -36,8 +38,8 @@
                 <div class="side left">
                   &nbsp;
                 </div>
-                <div class="main">
-                  <?php posts_nav_link('&nbsp;&nbsp;', __('&larr; Previous Page'), __('Next Page &rarr;')); ?>
+                <div class="main nav">
+                  <?php posts_nav_link('&nbsp;&nbsp;', __('&larr; Previous Posts'), __('Next Posts &rarr;')); ?>
                 </div>
               </div>
             <?php else : ?>
