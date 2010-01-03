@@ -30,6 +30,11 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.3.1
+    * Added paginated post support.
+  * 1.3
+    * Modified HTML markup and CSS stylesheet to improve content-first SEO.
+    * Added tags and categories count checks prior to displaying the tags and categories.
   * 1.2
     * Added global disabled comment handling.
   * 1.1
