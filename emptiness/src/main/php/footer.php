@@ -24,7 +24,7 @@
             <?php bloginfo('description'); ?>
           </div>
           <div class="side right">
-            <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <form method="get" action="<?php bloginfo('url'); ?>/">
               <div><input type="text" value="search..." name="s" onclick="this.value = ''"/></div>
             </form>
           </div>
