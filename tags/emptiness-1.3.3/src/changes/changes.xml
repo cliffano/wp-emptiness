@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>Changes</title>
+  </properties>
+  <body>
+    <release version="1.4-SNAPSHOT" date="current">
+    </release>
+    <release version="1.3.2" date="03-01-2010">
+      <action type="add" dev="cliffano">
+        Added print stylesheet that includes posts and comments only.
+      </action>
+    </release>  
+    <release version="1.3.1" date="03-01-2010">
+      <action type="add" dev="cliffano">
+        Added paginated post support.
+      </action>
+    </release>
+    <release version="1.3" date="03-01-2010">
+      <action type="update" dev="cliffano">
+        Modified HTML markup and CSS stylesheet to improve content-first SEO.
+      </action>
+      <action type="add" dev="cliffano">
+        Added tags and categories count checks prior to displaying the tags and categories.
+      </action>
+    </release>
+    <release version="1.2" date="24-08-2009">
+      <action type="add" dev="cliffano">
+        Added global disabled comment handling.
+      </action>
+    </release>
+    <release version="1.1" date="06-07-2009">
+      <action type="add" dev="cliffano">
+        Added custom image header.
+      </action>
+    </release>
+    <release version="1.0" date="17-05-2009">
+      <action type="add" dev="cliffano">
+        Added threaded comments. 
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 8 Added xhtml doctype to language_attributes call.
+      </action>
+      <action type="update" dev="cliffano">
+        Changed page title to display post title followed by blog name.
+      </action>
+    </release>
+    <release version="0.9" date="17-02-2009">
+      <action type="update" dev="cliffano">
+        Issue 11 Fixed admin link tag.
+      </action>
+    </release>
+    <release version="0.8" date="26-12-2008">
+      <action type="add" dev="cliffano">
+        Added Most Commented Posts to body right sidebar.
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 6 Added border left to indicate comments made by post author.
+      </action>
+      <action type="update" dev="cliffano">
+        Issue 7 Fixed logout link from comment form. 
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 8 Added language attributes to html tag.
+      </action>
+    </release>
+    <release version="0.7.1" date="12-12-2008">
+      <action type="update" dev="cliffano">
+        Adjusted margin and padding for aligned elements.
+      </action>
+    </release>
+    <release version="0.6" date="15-11-2008">
+      <action type="add" dev="cliffano">
+        Added link to WordPress admin, only displayed when user is logged in.
+      </action>
+    </release>
+    <release version="0.5" date="19-10-2008">
+      <action type="add" dev="cliffano">
+        Added limited microformat support (fn, url) on post and comment authors.
+      </action>
+    </release>
+    <release version="0.4" date="28-09-2008">
+      <action type="add" dev="cliffano">
+        Issue 2 Comment date becomes permalink.
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 3 Comment gravatar is linked to commenter's URL.
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 4 Added author gravatar to post details.
+      </action>
+      <action type="add" dev="cliffano">
+        Issue 5 Post author name is linked to author posts URL.
+      </action>
+    </release>
+    <release version="0.3.1" date="15-09-2008">
+      <action type="update" dev="cliffano">
+        Theme is now valid XHTML.
+      </action>
+      <action type="update" dev="cliffano">
+        Issue 1 Rendering problem on IE6.
+      </action>
+    </release>
+    <release version="0.2" date="30-07-2008">
+      <action type="add" dev="cliffano">
+        Widgetised the sidebars: header left, header right, body right, and post left.
+      </action>
+    </release>
+    <release version="0.1" date="14-06-2008">
+      <action type="add" dev="cliffano">
+        Initial release.
+      </action>
+    </release>
+  </body>
+</document>
