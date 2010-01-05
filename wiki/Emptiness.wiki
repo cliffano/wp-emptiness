@@ -16,7 +16,7 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
        Alternatively (with any version), create your own header image (file name must be header.jpg) with the exact dimension 500 pixels in width and 265 pixels in height. Replace the original header file wp-content/themes/emptiness/header.jpg with your own header.jpg . However, be careful not to overwrite your own header.jpg when you upgrade the theme later on in the future. You might be interested to learn [http://blog.qoqoa.com/2009/01/12/a-cleaner-way-to-customise-wordpress-theme-styles/ A Cleaner Way To Customise WordPress Theme Styles].
   * Q: How to remove "by author_name" and other post details on the left side of each post?
     A: Open up emptiness/index.php file. Find the word "the_author_posts_link()", that's pretty much the post details area on the left of each post. You can delete the lines that you don’t want there.
-  * Q: Why is there a huge space between the header and the post?
+  * Q: Why is there a huge space between the header and the post? Why are there overlapping texts on the header sidebars?
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead.
   * Q: On IE6, why does the right sidebar get pushed down below the body?
     A: This only happens when you have a post containing text or image wider than the width of the body (by default it's 500px). So you can either modify the wide content to fit 500px, or modify style.css and assign larger width (width attribute for div#container and div.main).
@@ -30,11 +30,9 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
-  * 1.3.2
+  * 1.3.3
     * Added print stylesheet that includes posts and comments only.
-  * 1.3.1
     * Added paginated post support.
-  * 1.3
     * Modified HTML markup and CSS stylesheet to improve content-first SEO.
     * Added tags and categories count checks prior to displaying the tags and categories.
   * 1.2
