@@ -12,6 +12,7 @@
               &nbsp;
             </div>
           </div>
+          <br style="clear: both;"/>
         </div>
       </div>
       <div id="header">
@@ -68,6 +69,7 @@
               endif;
             ?>
           </div>
+          <br style="clear: both;"/>
         </div>
       </div>
     </div>
