@@ -1,87 +1,78 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>wordpress</groupId>
-  <artifactId>bitpress</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-    <module>emptiness</module>
-    <module>reflection</module>
-  </modules>
-  <version>0.1</version>
-  <description>A collection of WordPress plugins and themes contributed by Studio Cliffano.</description>
+  <artifactId>emptiness</artifactId>
+  <version>1.3.4</version>
+  <description>
+    A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
+  </description>
   <inceptionYear>2008</inceptionYear>
-  <name>BitPress</name>
-  <url>http://code.google.com/p/bitpress/</url>
-  <issueManagement>
-    <system>Google Code</system>
-    <url>http://code.google.com/p/bitpress/issues/list</url>
-  </issueManagement>
-  <mailingLists>
-  </mailingLists>
-  <ciManagement>
-    <system>hudson</system>
-    <url>http://tools.cliffano.com/hudson/job/bitpress/</url>
-    <notifiers>
-      <notifier>
-        <type>mail</type>
-        <configuration>
-          <address>blah@cliffano.com</address>
-        </configuration>
-      </notifier>
-    </notifiers>
-  </ciManagement>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>atlassian-public</id>
-      <url>https://maven.atlassian.com/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
-  <distributionManagement>
-    <site>
-      <id>ayame</id>
-      <url>scp://cliffano@cliffano.com:2218/var/www/cliffano.com/studio/wordpress/bitpress</url>
-    </site>
-  </distributionManagement>
-  <scm>
-    <connection>
-      scm:svn:http://bitpress.googlecode.com/svn/trunk/
-    </connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>cliffano</id>
-      <name>Cliffano Subagio</name>
-      <email>blah@cliffano.com</email>
-      <url>http://blog.cliffano.com</url>
-      <roles>
-        <role>Developer</role>
-      </roles>
-      <timezone>+10</timezone>
-    </developer>
-  </developers>
+  <name>Emptiness Theme</name>
+  <parent>
+    <groupId>wordpress</groupId>
+    <artifactId>bitpress</artifactId>
+    <version>0.1</version>
+  </parent>
   <licenses>
     <license>
       <name>GPL License</name>
-      <url>LICENSE.txt</url>
+      <url>../LICENSE.txt</url>
     </license>
   </licenses>
-  <organization>
-    <name>Studio Cliffano</name>
-    <url>http://cliffano.com</url>
-  </organization>
   <dependencies>
   </dependencies>
   <build>
-  </build>
-  <reporting>
     <plugins>
       <plugin>
-        <artifactId>maven-changes-plugin</artifactId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/descriptor.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
-        <artifactId>maven-site-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <configuration>
+              <tasks>
+                <unzip src="${project.build.directory}/${project.artifactId}-${project.version}.zip" dest="${project.build.directory}" />
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.atlassian.maven.plugins</groupId>
+        <artifactId>maven-upload-plugin</artifactId>
+        <version>1.1</version>
+          <configuration>
+            <resourceSrc>${project.build.directory}/${project.artifactId}-${project.version}/*</resourceSrc>
+            <resourceDest>${project.artifactId}</resourceDest>
+            <serverId>ayame</serverId>
+            <url>scp://cliffano@cliffano.com:2218/var/www/cliffano.com/blog/wp-content/themes/</url>
+          </configuration>
       </plugin>
     </plugins>
-  </reporting>
+  </build>
+
+  <scm>
+    <connection>scm:svn:http://bitpress.googlecode.com/svn/tags/emptiness-1.3.4</connection>
+  </scm>
 </project>
