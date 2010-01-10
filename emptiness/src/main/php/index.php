@@ -55,5 +55,6 @@
             <?php endif; ?>
           </div>
           <?php get_sidebar(); ?>
+          <br style="clear: both;"/>
         </div>
         <?php get_footer(); ?>
