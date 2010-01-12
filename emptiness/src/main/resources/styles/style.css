@@ -23,6 +23,7 @@ div#container {
 div#header {
     position: absolute;
     top: 10px;
+    width: 1020px;
 }
 div#header div.main {
     font-weight: bold;
