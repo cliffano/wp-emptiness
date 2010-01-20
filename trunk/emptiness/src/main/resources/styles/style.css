@@ -148,6 +148,7 @@ div.comment.highlight {
 	border-left: 5px solid #cccccc;
 }
 div.splash {
+    background-repeat: no-repeat;
     height: 265px;
 }
 input {
