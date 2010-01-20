@@ -46,6 +46,24 @@
         <version>1.2</version>
         <executions>
           <execution>
+            <id>prepare-package</id>
+            <phase>prepare-package</phase>
+            <configuration>
+              <tasks>
+                <copy todir="${project.build.directory}/src">
+                  <fileset dir="src"/>
+                </copy>
+                <replace file="${project.build.directory}/src/main/resources/styles/style.css" value="${version}">
+                  <replacefilter token="@version@" />
+                </replace>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>package</id>
             <phase>package</phase>
             <configuration>
               <tasks>

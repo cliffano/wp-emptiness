@@ -4,7 +4,7 @@
   </formats>
   <fileSets>
     <fileSet>
-      <directory>src/main/php</directory>
+      <directory>target/src/main/php</directory>
       <includes>
         <include>*.*</include>
       </includes>
@@ -12,7 +12,7 @@
       <outputDirectory></outputDirectory>
     </fileSet>
     <fileSet>
-      <directory>src/main/resources/images</directory>
+      <directory>target/src/main/resources/images</directory>
       <includes>
         <include>*.*</include>
       </includes>
@@ -20,7 +20,7 @@
       <outputDirectory></outputDirectory>
     </fileSet>
     <fileSet>
-      <directory>src/main/resources/styles</directory>
+      <directory>target/src/main/resources/styles</directory>
       <includes>
         <include>*.*</include>
       </includes>
