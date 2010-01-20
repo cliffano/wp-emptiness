@@ -17,7 +17,9 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
   * Q: How to remove "by author_name" and other post details on the left side of each post?
     A: Open up emptiness/index.php file. Find the word "the_author_posts_link()", that's pretty much the post details area on the left of each post. You can delete the lines that you don’t want there.
   * Q: How to change the height of the header section?
-    A: Starting version 1.5, you need to add the following styles div#header div.side { max-height: 265px } div#bodyfooter { margin-top: 350px; }. But add the pixel difference to those values, e.g. if you want to increase the height by 200px, then set max-height: 465px and margin-top: 550px.
+    A: Starting version 1.5, you need to add the following styles in style.css: div#header div.side { max-height: 265px } div#bodyfooter { margin-top: 350px; }. But add the pixel difference to those values, e.g. if you want to increase the height by 200px, then set max-height: 465px and margin-top: 550px.
+  * Q: What if I want to use a header image with height other than 265px, say 300px?
+    A: Also starting version 1.5, you have to change add div.splash { height: 300px; } . Remember to change the height of the header section as explained in the Q&A above.
   * Q: Why is there a huge space between the header and the post? Why are there overlapping texts on the header sidebars?
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead. Please note that the height of the header sidebars are meant to be as high as the height of the header image (about 265px).
   * Q: On IE6, why does the right sidebar get pushed down below the body?
