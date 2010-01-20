@@ -98,12 +98,17 @@ a:hover {
 blockquote, div.comment {
     background-color: #efefef;
     color: #666666;
+    max-width: 500px;
+    overflow: auto;
     padding: 10px;
 }
-code {
+code, pre {
     background-color: #efefef;
     color: #666666;
-    padding: 5px;
+    font-size: 110%;
+    max-width: 500px;
+    overflow: auto;
+    padding: 3px;
 }
 div.depth1 {
 	margin-left: 0px;
