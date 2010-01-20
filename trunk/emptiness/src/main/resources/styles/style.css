@@ -100,6 +100,11 @@ blockquote, div.comment {
     color: #666666;
     padding: 10px;
 }
+code {
+    background-color: #efefef;
+    color: #666666;
+    padding: 5px;
+}
 div.depth1 {
 	margin-left: 0px;
 }
