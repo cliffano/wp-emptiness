@@ -25,6 +25,10 @@ div#header {
     top: 10px;
     width: 1020px;
 }
+div#header div.side {
+    max-height: 265px;
+    overflow: auto;
+}
 div#header div.main {
     font-weight: bold;
 }
