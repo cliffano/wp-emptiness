@@ -6,7 +6,7 @@
             <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
             <?php bloginfo('description'); ?>
           </div>
-          <div class="side right">
+          <div class="side right" style="overflow: hidden;">
             <form method="get" action="<?php bloginfo('url'); ?>/">
               <div><input type="text" value="search..." name="s" onclick="this.value = ''"/></div>
             </form>
