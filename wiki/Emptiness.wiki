@@ -34,6 +34,9 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.5
+    * Set overflow: auto to header side elements and code/pre/blockquote tags.
+    * Styled code and pre tags.
   * 1.4
     * Fixed header position problem on small-resolution screen (e.g. iPhone) .
     * Improved HTML markup for template layout. 
