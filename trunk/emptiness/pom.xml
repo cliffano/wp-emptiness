@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wordpress</groupId>
   <artifactId>emptiness</artifactId>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <description>
     A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
   </description>
@@ -51,7 +51,7 @@
             <configuration>
               <tasks>
                 <copy todir="${project.build.directory}/src">
-                  <fileset dir="src"/>
+                  <fileset dir="src" />
                 </copy>
                 <replace file="${project.build.directory}/src/main/resources/styles/style.css" value="${version}">
                   <replacefilter token="@version@" />
@@ -89,4 +89,8 @@
       </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <connection>scm:svn:http://bitpress.googlecode.com/svn/tags/emptiness-1.5</connection>
+  </scm>
 </project>
