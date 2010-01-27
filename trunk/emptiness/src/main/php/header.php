@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="side left">
+          <div class="side left" style="overflow: hidden;">
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Left Sidebar') ) : ?>
               <ul>
                 <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
