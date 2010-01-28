@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wordpress</groupId>
   <artifactId>emptiness</artifactId>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
   <description>
     A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
   </description>
@@ -52,7 +52,7 @@
             <configuration>
               <tasks>
                 <copy todir="${project.build.directory}/src">
-                  <fileset dir="src"/>
+                  <fileset dir="src" />
                 </copy>
                 <replace file="${project.build.directory}/src/main/resources/styles/style.css" value="${version}">
                   <replacefilter token="@version@" />
@@ -68,9 +68,9 @@
             <phase>package</phase>
             <configuration>
               <tasks>
-                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                 <zip destfile="${project.build.directory}/${project.artifactId}-${project.version}.zip">
-                   <zipfileset dir="${project.build.directory}/${project.artifactId}" prefix="${project.artifactId}"/>
+                   <zipfileset dir="${project.build.directory}/${project.artifactId}" prefix="${project.artifactId}" />
                 </zip>
               </tasks>
             </configuration>
@@ -93,4 +93,8 @@
       </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <connection>scm:svn:http://bitpress.googlecode.com/svn/tags/emptiness-1.6</connection>
+  </scm>
 </project>
