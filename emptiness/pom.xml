@@ -29,10 +29,11 @@
           <descriptors>
             <descriptor>src/main/assembly/descriptor.xml</descriptor>
           </descriptors>
+          <finalName>${project.artifactId}</finalName>
         </configuration>
         <executions>
           <execution>
-            <id>make-assembly</id>
+            <id>assembly-package</id>
             <phase>package</phase>
             <goals>
               <goal>single</goal>
@@ -46,12 +47,12 @@
         <version>1.2</version>
         <executions>
           <execution>
-            <id>prepare-package</id>
+            <id>antrun-prepare-package</id>
             <phase>prepare-package</phase>
             <configuration>
               <tasks>
                 <copy todir="${project.build.directory}/src">
-                  <fileset dir="src" />
+                  <fileset dir="src"/>
                 </copy>
                 <replace file="${project.build.directory}/src/main/resources/styles/style.css" value="${version}">
                   <replacefilter token="@version@" />
@@ -63,11 +64,14 @@
             </goals>
           </execution>
           <execution>
-            <id>package</id>
+            <id>antrun-package</id>
             <phase>package</phase>
             <configuration>
               <tasks>
-                <unzip src="${project.build.directory}/${project.artifactId}-${project.version}.zip" dest="${project.build.directory}" />
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                <zip destfile="${project.build.directory}/${project.artifactId}-${project.version}.zip">
+                   <zipfileset dir="${project.build.directory}/${project.artifactId}" prefix="${project.artifactId}"/>
+                </zip>
               </tasks>
             </configuration>
             <goals>
@@ -81,7 +85,7 @@
         <artifactId>maven-upload-plugin</artifactId>
         <version>1.1</version>
           <configuration>
-            <resourceSrc>${project.build.directory}/${project.artifactId}-${project.version}/*</resourceSrc>
+            <resourceSrc>${project.build.directory}/${project.artifactId}/*</resourceSrc>
             <resourceDest>${project.artifactId}</resourceDest>
             <serverId>ayame</serverId>
             <url>scp://cliffano@cliffano.com:2218/var/www/cliffano.com/blog/wp-content/themes/</url>
