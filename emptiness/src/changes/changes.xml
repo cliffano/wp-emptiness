@@ -4,7 +4,31 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="1.4-SNAPSHOT" date="current">
+    <release version="1.7-SNAPSHOT" date="current">
+      <action type="update" dev="cliffano">
+        Modified posts navigation wordings to better indicate the time-based order.
+      </action>
+    </release>
+    <release version="1.6" date="28-01-2010">
+      <action type="update" dev="cliffano">
+        Hid overflow on header left navigational menu div.  
+      </action>
+    </release>
+    <release version="1.5" date="21-01-2010">
+      <action type="update" dev="cliffano">
+        Set overflow: auto to header side elements and code/pre/blockquote tags.
+      </action>
+      <action type="update" dev="cliffano">
+        Styled code and pre tags.
+      </action>
+    </release>
+    <release version="1.4" date="17-01-2010">
+      <action type="update" dev="cliffano">
+        Fixed header position problem on small-resolution screen (e.g. iPhone) .
+      </action>
+      <action type="update" dev="cliffano">
+        Improved HTML markup for template layout.
+      </action>   
     </release>
     <release version="1.3.4" date="10-01-2010">
       <action type="update" dev="cliffano">

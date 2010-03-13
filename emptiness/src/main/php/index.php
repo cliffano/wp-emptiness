@@ -59,7 +59,7 @@
                   &nbsp;
                 </div>
                 <div class="main nav">
-                  <?php posts_nav_link('&nbsp;&nbsp;', __('&larr; Previous Posts'), __('Next Posts &rarr;')); ?>
+                  <?php posts_nav_link('&nbsp;&nbsp;', __('&larr; Newer Posts'), __('Older Posts &rarr;')); ?>
                 </div>
               </div>
             <?php else : ?>
