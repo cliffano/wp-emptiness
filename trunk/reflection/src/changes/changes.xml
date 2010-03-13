@@ -5,6 +5,9 @@
   </properties>
   <body>
     <release version="0.3-SNAPSHOT" date="current">
+      <action type="update" dev="cliffano">
+        Added test.
+      </action>
     </release>
     <release version="0.2" date="12-12-2008">
       <action type="add" dev="cliffano">
