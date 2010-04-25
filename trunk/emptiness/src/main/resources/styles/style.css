@@ -171,6 +171,15 @@ hr {
 	margin: 15px auto 15px auto;
 	width: 80%;
 }
+th {
+    background-color: #dddddd;
+    padding: 5px;
+    text-align: center;
+}
+td {
+    background-color: #eeeeee;
+    padding: 3px;
+}
 li.cat-item {
     display: inline;
 }
