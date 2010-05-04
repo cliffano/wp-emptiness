@@ -3,7 +3,7 @@
 Plugin Name: Reflection
 Plugin URI: http://code.google.com/p/bitpress/wiki/Reflection
 Description: Apply reflection effect to images with 'reflection' as one of the HTML attribute class values.
-Version: 0.2
+Version: 0.3-SNAPSHOT
 Author: Cliffano Subagio
 Author URI: http://blog.cliffano.com
 */
@@ -27,8 +27,9 @@ class BitpressReflection {
 	}
 	
 	function head() {
-		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection-raphael.js"></script>';
-		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'reflection.js"></script>';
+	   echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'util.js"></script>';
+	   echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'michaelangelo.js"></script>';
+		echo '<script type="text/javascript" src="' . get_option('siteurl') . '/wp-content/plugins/reflection/' . 'raphael-min.js"></script>';
 	}
 	
 	function footer() {
@@ -36,9 +37,9 @@ class BitpressReflection {
 				trim(get_option('bitpress_reflection_bgcolor')) != "" &&
 				get_option('bitpress_reflection_height') != null &&
 				trim(get_option('bitpress_reflection_height')) != "") {
-			echo '<script type="text/javascript">new BitpressImageMgr("' . wp_specialchars(get_option('bitpress_reflection_bgcolor')) . '", "' . wp_specialchars(get_option('bitpress_reflection_height')) . '").process(document.images);</script>';
+			echo '<script type="text/javascript">new com_cliffano_reflection.Michaelangelo("' . wp_specialchars(get_option('bitpress_reflection_bgcolor')) . '", "' . wp_specialchars(get_option('bitpress_reflection_height')) . '").paint(document.images);</script>';
 		} else {
-			echo '<script type="text/javascript">new BitpressImageMgr().process(document.images);</script>';
+			echo '<script type="text/javascript">new com_cliffano_reflection.Michaelangelo().paint(document.images);</script>';
 		}
 	}
 
