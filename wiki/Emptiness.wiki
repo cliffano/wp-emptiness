@@ -34,6 +34,9 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.7
+    * Modified posts navigation wordings to better indicate the time-based order.
+    * Added table header and cell styles.
   * 1.6
     * Hid overflow on header left navigational menu div.
   * 1.5
