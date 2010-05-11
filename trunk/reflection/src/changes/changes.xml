@@ -4,9 +4,12 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="0.3-SNAPSHOT" date="current">
-      <action type="update" dev="cliffano">
+    <release version="0.3" date="11-05-2010">
+      <action type="add" dev="cliffano">
         Added test.
+      </action>
+      <action type="update" dev="cliffano">
+        Refactored interface to Raphael.
       </action>
     </release>
     <release version="0.2" date="12-12-2008">

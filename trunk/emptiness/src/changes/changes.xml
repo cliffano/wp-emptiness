@@ -4,9 +4,12 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="1.7-SNAPSHOT" date="current">
+    <release version="1.7" date="11-05-2010">
       <action type="update" dev="cliffano">
         Modified posts navigation wordings to better indicate the time-based order.
+      </action>
+      <action type="add" dev="cliffano">
+        Added table header and cell styles.
       </action>
     </release>
     <release version="1.6" date="28-01-2010">

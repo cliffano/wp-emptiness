@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wordpress</groupId>
   <artifactId>emptiness</artifactId>
-  <version>1.7-SNAPSHOT</version>
+  <version>1.7</version>
   <description>
     A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
   </description>
