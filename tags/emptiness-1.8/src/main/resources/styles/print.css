@@ -1,0 +1,3 @@
+div#header, div#footer, div.side, div#respond, div.nav {
+    display: none;
+}
