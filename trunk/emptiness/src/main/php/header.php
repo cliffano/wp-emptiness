@@ -35,9 +35,11 @@
                 if ( count(get_tags()) > 0 ) :
             ?>
               <h3>Tags</h3>
-              <div>
-                <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
-              </div>
+              <ul>
+                <li>
+                  <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
+                </li>
+              </ul>
             <?php
                 endif;
                 if ( count(get_categories) > 0 ) :

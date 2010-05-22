@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.8" date="22-05-2010">
+      <action type="update" dev="cliffano">
+        Modified font family, colours,  and sizes.
+      </action>
+      <action type="update" dev="cliffano">
+        Modified header div height to 281, so header image can have standard 16:9 dimension.
+      </action>
+    </release>
     <release version="1.7" date="11-05-2010">
       <action type="update" dev="cliffano">
         Modified posts navigation wordings to better indicate the time-based order.

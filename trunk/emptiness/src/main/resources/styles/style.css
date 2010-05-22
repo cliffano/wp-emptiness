@@ -10,7 +10,7 @@ Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, mi
 body {
     background-color: #ffffff;
     color: #333333;
-    font: 83%/1.4 arial, helvetica, sans-serif;
+    font: 83%/1.4 helvetica neue, arial, sans-serif;
     line-height: 170%;
     margin: 0;
     padding: 20px 0 20px 0;
@@ -26,14 +26,18 @@ div#header {
     width: 1020px;
 }
 div#header div.side {
-    max-height: 265px;
+    max-height: 281px;
     overflow: auto;
+}
+div#header div.left a {
+    font-weight: bold;
+    text-decoration: none;
 }
 div#header div.main {
     font-weight: bold;
 }
 div#header div.main a {
-    font-size: 25px;
+    font-size: 28px;
     text-decoration: none;
 }
 div#header div.main h1 {
@@ -91,23 +95,23 @@ div.main {
     width: 500px;
 }
 a {
-    color: #999999;
+    color: #666666;
     text-decoration: underline;
 }
 a:hover {
-    background-color: #efefef;
-    color: #999999;
+    background-color: #dddddd;
+    color: #666666;
     text-decoration: none;
 }
 blockquote, div.comment {
-    background-color: #efefef;
+    background-color: #dddddd;
     color: #666666;
     max-width: 500px;
     overflow: auto;
     padding: 10px;
 }
 code, pre {
-    background-color: #efefef;
+    background-color: #dddddd;
     color: #666666;
     font-size: 110%;
     max-width: 500px;
@@ -149,17 +153,20 @@ div.comment.highlight {
 }
 div.splash {
     background-repeat: no-repeat;
-    height: 265px;
+    height: 281px;
 }
 input {
     color: #666666;
 }
 h2 {
-    font-size: 115%;
+    font-size: 18px;
     margin: 0;
 }
+h2 a {
+    text-decoration: none;
+}
 h3 {
-    font-size: 100%;
+    font-size: 14px;
     margin: 0;
 }
 img {
