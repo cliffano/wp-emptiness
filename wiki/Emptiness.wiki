@@ -20,6 +20,8 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
     A: Starting version 1.5, you need to add the following styles in style.css: div#header div.side { max-height: 281px } div#bodyfooter { margin-top: 350px; }. But add the pixel difference to those values, e.g. if you want to increase the height by 200px, then set max-height: 465px and margin-top: 550px.
   * Q: What if I want to use a header image with height other than 281px, say 300px?
     A: Also starting version 1.5, you have to change add div.splash { height: 300px; } . Remember to change the height of the header section as explained in the Q&A above.
+  * Q: How to change the banner / middle column width to be larger than 500px?
+    A: E.g. if you want to change the width from 500px to 600px. First, you need to modify style.css, change width value in div.main from 500px to 600px, then change div#container & div#header width from 1020px to 1020px + the increase in height (100px) = 1120px. Then modify functions.php, change define('HEADER_IMAGE_WIDTH', 500); to define('HEADER_IMAGE_WIDTH', 600); .
   * Q: Why is there a huge space between the header and the post? Why are there overlapping texts on the header sidebars?
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead. Please note that the height of the header sidebars are meant to be as high as the height of the header image (about 281px).
   * Q: On IE6, why does the right sidebar get pushed down below the body?
