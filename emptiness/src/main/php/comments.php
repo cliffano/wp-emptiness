@@ -18,6 +18,10 @@
             <?php if ($comments) : ?>
               <div class="item" id="comments"></div>
               <?php wp_list_comments(array('style' => 'div', 'type' => 'all', 'callback' => 'mytheme_comment', 'post' => $post)); ?>
+              <div class="item">
+                <div class="side left">&nbsp;</div>
+                <div class="main nav"><?php paginate_comments_links(); ?></div>
+              </div>
             <?php endif; ?>
             <div id="respond" class="item">
               <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
