@@ -36,6 +36,8 @@ There are 4 types of widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.9
+    * Added comments pagination.
   * 1.8
     * Modified font family, colours,  and sizes.
     * Modified header div height to 281, so header image can have standard 16:9 dimension.
