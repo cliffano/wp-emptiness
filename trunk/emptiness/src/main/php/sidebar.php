@@ -1,4 +1,6 @@
         <div class="side right">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Body RightTop Sidebar') ) : ?>
+          <?php endif; ?>
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Body Right Sidebar') ) : ?>
             <h3>Recent Posts</h3>
             <ul>
@@ -20,5 +22,7 @@
 		    <ul>
 			  <?php get_links(-1, '<li>', '</li>', ' - '); ?>
 		    </ul>
+		  <?php endif; ?>
+		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Body RightBottom Sidebar') ) : ?>
 		  <?php endif; ?>
         </div>
