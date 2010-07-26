@@ -88,7 +88,7 @@
             <resourceSrc>${project.build.directory}/${project.artifactId}/*</resourceSrc>
             <resourceDest>${project.artifactId}</resourceDest>
             <serverId>ayame</serverId>
-            <url>scp://cliffano@cliffano.com:2218/var/www/cliffano.com/blog/wp-content/themes/</url>
+            <url>scp://ayame:2218/var/www/cliffano.com/blog/wp-content/themes/</url>
           </configuration>
       </plugin>
     </plugins>
