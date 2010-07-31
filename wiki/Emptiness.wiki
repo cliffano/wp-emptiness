@@ -39,6 +39,8 @@ Starting v1.10, there are two more widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.11
+    * Fixed image center alignment bug.
   * 1.10
     * Added new widget sidebar types: Body RightTop Sidebar and Body RightBottom Sidebar.
   * 1.9
