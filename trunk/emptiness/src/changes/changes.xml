@@ -4,6 +4,11 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.11" date="01-08-2010">
+      <action type="update" dev="cliffano">
+        Fixed image center alignment bug.
+      </action>
+    </release>
     <release version="1.10" date="10-07-2010">
       <action type="add" dev="cliffano">
         Added new widget sidebar types: Body RightTop Sidebar and Body RightBottom Sidebar.

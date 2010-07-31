@@ -216,7 +216,6 @@ img.alignleft {
     margin: 0 8px 8px 0;
 }
 .aligncenter {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin: 0 8px 0 8px;
