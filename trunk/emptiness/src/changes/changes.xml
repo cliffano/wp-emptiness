@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.12" date="current">
+      <action type="add" dev="cliffano">
+        Added license file.
+      </action>
+      <action type="update" dev="cliffano">
+        Replaced deprecated get_links() with get_bookmarks().
+      </action>
+    </release>
     <release version="1.11" date="01-08-2010">
       <action type="update" dev="cliffano">
         Fixed image center alignment bug.

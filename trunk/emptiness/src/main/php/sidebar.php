@@ -19,9 +19,14 @@
               </ul>
             <?php } ?>
 	        <h3>Linkroll</h3>
-		    <ul>
-			  <?php get_links(-1, '<li>', '</li>', ' - '); ?>
-		    </ul>
+            <ul>
+              <?php 
+                $bookmarks = get_bookmarks();
+                foreach ($bookmarks as $bookmark) { 
+                  echo "<li><a href=\"{$bookmark->link_url}\">{$bookmark->link_name}</a></li>";
+                }
+              ?>
+            </ul>
 		  <?php endif; ?>
 		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Body RightBottom Sidebar') ) : ?>
 		  <?php endif; ?>
