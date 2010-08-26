@@ -22,7 +22,7 @@ function mytheme_comment($comment, $args, $depth) {
 	        <?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?><br/>
 	    <?php endif; ?>
 	    <?php edit_comment_link('edit', '', ''); ?>
-	    <?php comment_reply_link(array_merge( $args, array('reply_text' => 'reply', 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?><br/>
+	    <?php comment_reply_link(array_merge( $args, array('reply_text' => 'reply', 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?><br/>
 	  </div>
 	  <div class="main">
 	    <div class="comment<?php if ($comment->user_id == $args['post']->post_author) { echo ' highlight'; }; ?> depth<?php echo $depth; ?>">
