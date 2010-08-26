@@ -42,7 +42,7 @@
               </ul>
             <?php
                 endif;
-                if ( count(get_categories) > 0 ) :
+                if ( count(get_categories()) > 0 ) :
             ?>
               <h3>Categories</h3>
               <ul>
