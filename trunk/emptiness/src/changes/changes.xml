@@ -9,16 +9,19 @@
         Added license file.
       </action>
       <action type="update" dev="cliffano">
-        Replaced deprecated get_links() with get_bookmarks().
+        Replaced deprecated function get_links() with get_bookmarks().
       </action>
       <action type="update" dev="cliffano">
-        Replaced deprecated get_the_author_id() with get_the_author_meta('ID').
+        Replaced deprecated function get_the_author_id() with get_the_author_meta('ID').
       </action>
       <action type="update" dev="cliffano">
         Fixed categories count syntax error.
       </action>
       <action type="update" dev="cliffano">
         Fixed comment reply form to appear right below the replied comment.
+      </action>
+      <action type="add" dev="cliffano">
+        Added add_theme_support function call.
       </action>
     </release>
     <release version="1.11" date="01-08-2010">
