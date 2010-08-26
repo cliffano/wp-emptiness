@@ -27,5 +27,13 @@
       <useDefaultExcludes>true</useDefaultExcludes>
       <outputDirectory></outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory></directory>
+      <includes>
+        <include>license.txt</include>
+      </includes>
+      <useDefaultExcludes>true</useDefaultExcludes>
+      <outputDirectory></outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
