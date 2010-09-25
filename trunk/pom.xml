@@ -39,8 +39,8 @@
   </pluginRepositories>
   <distributionManagement>
     <site>
-      <id>ayame</id>
-      <url>scp://cliffano@cliffano.com:2218/var/www/cliffano.com/studio/wordpress/bitpress</url>
+      <id>studio</id>
+      <url>scp://teuchi:2218/var/www/cliffano.com/studio/wordpress/bitpress</url>
     </site>
   </distributionManagement>
   <scm>
