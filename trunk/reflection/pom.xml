@@ -66,8 +66,8 @@
           <configuration>
             <resourceSrc>${project.build.directory}/${project.artifactId}-${project.version}/*</resourceSrc>
             <resourceDest>${project.artifactId}</resourceDest>
-            <serverId>ayame</serverId>
-            <url>scp://ayame:2218/var/www/cliffano.com/blog/wp-content/plugins/</url>
+            <serverId>studio</serverId>
+            <url>scp://teuchi:2218/var/www/cliffano.com/blog/wp-content/plugins/</url>
           </configuration>
       </plugin>
     </plugins>
