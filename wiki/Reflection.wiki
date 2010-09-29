@@ -2,7 +2,7 @@ Reflection is a WordPress plugin which applies reflection effect to images with 
 
 This plugin uses [http://raphaeljs.com/ Raphael] JavaScript library to create the reflection effect. It only supports Firefox 3.0+, Safari 3.0+, Opera 9.5+, and Internet Explorer 6.0+. On other browsers, you'll only see the image without the reflection.
 
-[http://blog.qoqoa.com/2008/12/06/testing-reflection-plugin/ View Demo]
+[http://blog.cliffano.com/2008/12/06/testing-reflection-plugin/ View Demo]
 [http://wordpress.org/extend/plugins/reflection/ Download]
 
 ==Installation==
