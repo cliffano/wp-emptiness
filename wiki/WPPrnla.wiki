@@ -12,11 +12,11 @@ WP-Prnla is a WordPress plugin which allows the use of Prnla http://prn.la as a 
 ==Screenshots==
 Get Shortlink button
 
-http://bitpress.googlecode.com/svn/wiki/images/wpprnla_getshortlink.jpg
+http://bitpress.googlecode.com/svn/wiki/images/wpprnla_getshortlink.png
 
 The pop-up window
 
-http://bitpress.googlecode.com/svn/wiki/images/wpprnla_popup.jpg
+http://bitpress.googlecode.com/svn/wiki/images/wpprnla_popup.png
 
 ==Changelog==
   * 0.1
