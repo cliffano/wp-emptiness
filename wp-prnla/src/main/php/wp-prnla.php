@@ -22,18 +22,21 @@ function wpprnla_shorten($long_url) {
 }
 
 function wpprnla_get_shortlink($shortlink, $post_id, $context) {
-    if (empty($post_id)) {
-        global $post;
-        $post_id = $post->ID;
-    }
-    $shortlink = get_post_meta($post_id, '_wpprnla', true);
-    if ($shortlink == '' || $shortlink == false) {
-        $permalink = get_permalink($post_id);
-        $shortlink = wpprnla_shorten($permalink);
-        if (strpos($shortlink, 'http://prn.la') === 0) {
-            update_post_meta($post_id, '_wpprnla', $shortlink);
-        } else {
-            $shortlink = 'ERROR: ' . $shortlink;
+    $shortlink = '';
+    if ($context == 'post') {
+        if (empty($post_id)) {
+            global $post;
+            $post_id = $post->ID;
+        }
+        $shortlink = get_post_meta($post_id, '_wpprnla', true);
+        if ($shortlink == '' || $shortlink == false) {
+            $permalink = get_permalink($post_id);
+            $shortlink = wpprnla_shorten($permalink);
+            if (strpos($shortlink, 'http://prn.la') === 0) {
+                update_post_meta($post_id, '_wpprnla', $shortlink);
+            } else {
+                $shortlink = 'ERROR: ' . $shortlink;
+            }
         }
     }
     return $shortlink;
