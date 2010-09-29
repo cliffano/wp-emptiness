@@ -9,7 +9,7 @@ Author URI: http://blog.cliffano.com
 */
 
 function wpprnla_shorten($long_url) {
-    $prnla = 'http://prn.la/v0/pendekkan?panjang=' . urlencode($long_url) . '&format=teks';
+    $prnla = 'http://prn.la/x?prn=' . urlencode($long_url);
     if (function_exists('curl_init')) {
         $session = curl_init($prnla);
         curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
