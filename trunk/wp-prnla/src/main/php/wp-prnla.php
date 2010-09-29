@@ -30,7 +30,11 @@ function wpprnla_get_shortlink($shortlink, $post_id, $context) {
     if ($shortlink == '' || $shortlink == false) {
         $permalink = get_permalink($post_id);
         $shortlink = wpprnla_shorten($permalink);
-        update_post_meta($post_id, '_wpprnla', $shortlink);
+        if (strpos($shortlink, 'http://prn.la') === 0) {
+            update_post_meta($post_id, '_wpprnla', $shortlink);
+        } else {
+            $shortlink = 'ERROR: ' . $shortlink;
+        }
     }
     return $shortlink;
 }
