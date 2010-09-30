@@ -1,0 +1,27 @@
+WP-Prnla adalah plugin WordPress plugin yang menggunakan Prnla http://prn.la sebagai pemendek pranala.
+
+*Catatan:* memerlukan WordPress 3.0 or atau lebih baru.
+
+[http://wordpress.org/extend/plugins/wp-prnla/ Unduh]
+
+==Instalasi==
+  # Di halaman admin WordPress, pilih *Plugins -> Add New* pada menu di sebelah kiri.
+  # Anda dapat memilih *Search* dan mencari kata *wp-prnla*, atau *Upload* berkas wp-prnla-version.zip yang dapat anda [http://wordpress.org/extend/plugins/wp-prnla/ unduh] situs WordPress Plugins. 
+  # Jangan lupa untuk mengaktivasi pluginnya.
+
+==Penggunaan==
+  * Jika anda sedang menulis post baru, tombol *Get Shortlink* akan muncul di sebelah kanan permalink setelah anda menyimpan draft atau mempublikasi post nya. Jika anda sedang mengedit post, tombol *Get Shortlink* akan muncul dari awal.
+  * Jika anda klik tombol itu, makan pop-up dialog akan muncul dengan pranala pendek Prnla.
+
+==Tangkapan Layar==
+Tombol Get Shortlink
+
+http://bitpress.googlecode.com/svn/wiki/images/wpprnla_getshortlink.jpg
+
+Pop-up dialog
+
+http://bitpress.googlecode.com/svn/wiki/images/wpprnla_popup.jpg
+
+==Perubahan==
+  * 0.1
+    * Initial release.
