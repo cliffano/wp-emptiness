@@ -1,12 +1,12 @@
 WP-Prnla is a WordPress plugin which allows the use of Prnla http://prn.la as a shortlink / URL shortener.
 
-Note: requires WordPress 3.0 or newer.
+*Note:* requires WordPress 3.0 or newer.
 
 [http://wordpress.org/extend/plugins/wp-prnla/ Download]
 
 ==Installation==
   # On WordPress admin page, select *Plugins -> Add New* from the left menu.
-  # You can either select *Search* and search for *wp-prnla*, or *Upload* wp-prnla-<version>.zip file that you can [http://wordpress.org/extend/plugins/wp-prnla/ download] from WordPress Plugins site. 
+  # You can either select *Search* and search for *wp-prnla*, or *Upload* wp-prnla-version.zip file that you can [http://wordpress.org/extend/plugins/wp-prnla/ download] from WordPress Plugins site. 
   # Don't forget to activate the plugin.
 
 ==Usage==
