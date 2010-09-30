@@ -10,7 +10,7 @@ WP-Prnla is a WordPress plugin which allows the use of Prnla http://prn.la as a 
   # Don't forget to activate the plugin.
 
 ==Usage==
-  * When you're adding a new post, a "Get Shortlink" button at the right side of the permalink will appear after you save a draft or publish the post. If you're editing an existing post, then the "Get Shortlink" button should already be visible.
+  * When you're adding a new post, a *Get Shortlink* button at the right side of the permalink will appear after you save a draft or publish the post. If you're editing an existing post, then the *Get Shortlink* button should already be visible.
   * If you click that button, then a pop-up window will appear with the Prnla short URL.
 
 ==Screenshots==
@@ -18,7 +18,7 @@ Get Shortlink button
 
 http://bitpress.googlecode.com/svn/wiki/images/wpprnla_getshortlink.jpg
 
-The pop-up window
+The pop-up dialog
 
 http://bitpress.googlecode.com/svn/wiki/images/wpprnla_popup.jpg
 
