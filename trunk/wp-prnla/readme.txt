@@ -10,7 +10,7 @@ Allows the use of Prnla http://prn.la as a shortlink / URL shortener.
 == Description ==
 WP-Prnla is a WordPress plugin which allows the use of Prnla http://prn.la as a shortlink / URL shortener.
 
-For Installation, Usage, and other information, please visit [WP-Prnla Plugin](http://code.google.com/p/bitpress/wiki/WPPrnla) web page.
+For Installation, Usage, and other information, please visit WP-Prnla Plugin web page [English](http://code.google.com/p/bitpress/wiki/WPPrnla) [Bahasa Indonesia](http://code.google.com/p/bitpress/wiki/WPPrnlaID).
 
 == Screenshots ==
 
