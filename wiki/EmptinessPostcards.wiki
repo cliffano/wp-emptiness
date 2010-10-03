@@ -1,11 +1,10 @@
 This page is where I keep the 'postcards' from Emptiness Theme users. If you found the Emptiness Theme useful and would like to somehow thank me, you can, by:
-
-# Taking a picture of something/anything from your local neighbourhood, the city you live in.
-# And emailing it to blah@cliffano.com along with a short description.
+  # Taking a picture of something/anything from your local neighbourhood, the city you live in.
+  # And emailing it to blah@cliffano.com along with a short description.
 
 Thanks for using Emptiness Theme :).
 
-* [http://www.redlemoncreative.com Genevieve] from Portland, Oregon, USA.
+  * [http://www.redlemoncreative.com Genevieve] from Portland, Oregon, USA.
 
 "Attached is my photo of the Steel Bridge which spans the Wilamette River in Portland, Oregon. I like to ride my bike over this bridge to get to downtown Portland."
 
