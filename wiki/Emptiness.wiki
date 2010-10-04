@@ -2,7 +2,7 @@ Emptiness is a minimalist WordPress theme with a white background, containing mo
 
 [http://blog.qoqoa.com/index.php?wptheme=Emptiness View Demo]
 [http://wordpress.org/extend/themes/emptiness Download]
-[EmptinessPostcards Send Me A Self-made-e-postcard]
+[EmptinessPostcards Send Me A Postcard]
 
 Starting version 1.0, this theme requires WordPress 2.7 or later.
 Older versions require WordPress 2.3 or later.
