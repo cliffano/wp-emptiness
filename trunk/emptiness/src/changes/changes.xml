@@ -4,7 +4,7 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="1.12" date="current">
+    <release version="1.12" date="03-11-2020">
       <action type="add" dev="cliffano">
         Added license file.
       </action>
