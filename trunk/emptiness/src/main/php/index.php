@@ -18,14 +18,14 @@
     <?php wp_head(); ?>
     <!-- Emptiness Theme by Studio Cliffano -->
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <div id="container">
       <div id="bodyfooter">
         <div id="body">
           <div id="content">
             <?php if (have_posts()) : ?>
               <?php while (have_posts()) : the_post(); ?>
-                <div class="item">
+                <div <?php post_class('item'); ?>>
                   <div class="vcard side left">
                     <span class="date"><?php the_time('j M Y, g:ia') ?></span><br/>
                     <span class="labels"><?php the_category(' ') ?><?php the_tags(': ', ' '); ?></span><br/>
