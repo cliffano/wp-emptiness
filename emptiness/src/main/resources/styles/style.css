@@ -148,7 +148,7 @@ div.depth9 {
 div.depth10 {
 	margin-left: 135px;
 }
-div.comment.highlight {
+div.comment.bypostauthor {
 	border-left: 5px solid #cccccc;
 }
 div.splash {
@@ -241,4 +241,6 @@ img.alignleft {
 	line-height: 17px;
 	padding: 0 4px 5px;
 	margin: 0;
+}
+.gallery-caption, .wp-caption-text, .sticky {
 }
