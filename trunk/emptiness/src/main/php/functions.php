@@ -26,7 +26,7 @@ function mytheme_comment($comment, $args, $depth) {
 	    <?php comment_reply_link(array_merge( $args, array('reply_text' => 'reply', 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?><br/>
 	  </div>
 	  <div class="main">
-	    <div class="comment<?php if ($comment->user_id == $args['post']->post_author) { echo ' highlight'; }; ?> depth<?php echo $depth; ?>">
+	    <div class="comment<?php if ($comment->user_id == $args['post']->post_author) { echo ' bypostauthor'; }; ?> depth<?php echo $depth; ?>">
 	      <?php comment_text() ?>
 	    </div>
 	  </div>
@@ -52,4 +52,6 @@ function emptiness_admin_header_style() {
 <?php
 }
 add_custom_image_header('header_style', 'emptiness_admin_header_style');
+add_custom_background();
+add_editor_style();
 ?>

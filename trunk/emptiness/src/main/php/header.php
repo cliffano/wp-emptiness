@@ -3,11 +3,11 @@
             &nbsp;
           </div>
           <div class="main">
-            <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
             <?php bloginfo('description'); ?>
           </div>
           <div class="side right" style="overflow: hidden;">
-            <form method="get" action="<?php bloginfo('url'); ?>/">
+            <form method="get" action="<?php echo home_url(); ?>/">
               <div><input type="text" value="search..." name="s" onclick="this.value = ''"/></div>
             </form>
           </div>
@@ -16,7 +16,7 @@
           <div class="side left" style="overflow: hidden;">
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Left Sidebar') ) : ?>
               <ul>
-                <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+                <li><a href="<?php echo home_url(); ?>">Home</a></li>
                 <?php wp_list_pages('title_li='); ?>
                 <li><a href="<?php bloginfo('atom_url'); ?>">Feed</a></li>
                 <?php if (is_user_logged_in()) { ?>
