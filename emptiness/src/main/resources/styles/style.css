@@ -9,9 +9,10 @@ Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, mi
 */
 body {
     background-color: #ffffff;
-    color: #333333;
-    font: 83%/1.4 helvetica neue, arial, sans-serif;
-    line-height: 170%;
+    color: #000000;
+    font-family: georgia, serif;
+    font-size: 13px;
+    line-height: 160%;
     margin: 0;
     padding: 20px 0 20px 0;
 }
@@ -99,19 +100,19 @@ a {
     text-decoration: underline;
 }
 a:hover {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     color: #666666;
     text-decoration: none;
 }
 blockquote, div.comment {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     color: #666666;
     max-width: 500px;
     overflow: auto;
     padding: 10px;
 }
 code, pre {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     color: #666666;
     font-size: 110%;
     max-width: 500px;
@@ -149,7 +150,7 @@ div.depth10 {
 	margin-left: 135px;
 }
 div.comment.bypostauthor {
-	border-left: 5px solid #cccccc;
+	border-left: 3px solid #999999;
 }
 div.splash {
     background-repeat: no-repeat;
@@ -158,7 +159,11 @@ div.splash {
 input {
     color: #666666;
 }
+h1 {
+    font-family: helvetica, sans-serif;
+}
 h2 {
+    font-family: helvetica, sans-serif;
     font-size: 18px;
     margin: 0;
 }
@@ -166,6 +171,7 @@ h2 a {
     text-decoration: none;
 }
 h3 {
+    font-family: helvetica, sans-serif;
     font-size: 14px;
     margin: 0;
 }
@@ -191,6 +197,7 @@ li.cat-item {
     display: inline;
 }
 span.date {
+    font-family: helvetica, sans-serif;
     font-weight: bold;
 }
 span.labels {
