@@ -24,6 +24,7 @@
                 <?php } ?>
                 <li><?php wp_loginout(); ?></li>
               </ul>
+              <?php wp_nav_menu(); ?>
             <?php endif; ?>
           </div>
           <div class="main splash">
