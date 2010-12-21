@@ -37,7 +37,7 @@
               <h3>Tags</h3>
               <ul>
                 <li>
-                  <?php wp_tag_cloud('smallest=9&largest=14&number=25'); ?>
+                  <?php wp_tag_cloud('smallest=9&largest=14&number=30'); ?>
                 </li>
               </ul>
             <?php

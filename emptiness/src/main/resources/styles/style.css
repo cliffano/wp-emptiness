@@ -12,7 +12,7 @@ body {
     color: #000000;
     font-family: georgia, serif;
     font-size: 13px;
-    line-height: 160%;
+    line-height: 170%;
     margin: 0;
     padding: 20px 0 20px 0;
 }
@@ -31,6 +31,7 @@ div#header div.side {
     overflow: auto;
 }
 div#header div.left a {
+    border-bottom: none;
     font-weight: bold;
     text-decoration: none;
 }
@@ -38,6 +39,7 @@ div#header div.main {
     font-weight: bold;
 }
 div#header div.main a {
+    border-bottom: none;
     font-size: 28px;
     text-decoration: none;
 }
@@ -96,8 +98,9 @@ div.main {
     width: 500px;
 }
 a {
+    border-bottom: 1px dotted #666666;
     color: #666666;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:hover {
     background-color: #eeeeee;
@@ -168,6 +171,7 @@ h2 {
     margin: 0;
 }
 h2 a {
+    border-bottom: none;
     text-decoration: none;
 }
 h3 {
