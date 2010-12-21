@@ -33,6 +33,7 @@
                     <?php echo get_avatar( get_the_author_meta('ID'), $size = '48', $default = 'identicon' ); ?><br/>
                     <?php comments_popup_link('leave a comment', '1 comment', '% comments'); ?>
                     <?php edit_post_link('edit', '', ''); ?><br/>
+                    <br/>
                     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Post Left Sidebar') ) : ?>
                     <?php endif; ?>
                   </div>
