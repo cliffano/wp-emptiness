@@ -40,6 +40,9 @@ Starting v1.10, there are two more widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.13.1
+    * Added content_width set to 500 pixels.
+    * Added license details to style.css, updated license to GPL3.
   * 1.13
     * Added configurable body and post classes.
     * Replaced bloginfo('url') with home_url().
