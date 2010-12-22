@@ -4,7 +4,27 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="1.12" date="03-11-2020">
+    <release version="1.13" date="22-12-2010">
+      <action type="add" dev="cliffano">
+        Added configurable body and post classes.
+      </action>
+      <action type="update" dev="cliffano">
+        Replaced bloginfo('url') with home_url().
+      </action>
+      <action type="update" dev="cliffano">
+        Replaced bloginfo('stylesheet_directory') with get_stylesheet_directory_uri().
+      </action>
+      <action type="update" dev="cliffano">
+        Replaced author comment div class with .bypostauthor .
+      </action>
+      <action type="add" dev="cliffano">
+        Added nav_menu and post thumbnail support.
+      </action>
+      <action type="update" dev="cliffano">
+        Replaced hardcoded footer links with esc_url.
+      </action>
+    </release>
+    <release version="1.12" date="03-11-2010">
       <action type="add" dev="cliffano">
         Added license file.
       </action>
