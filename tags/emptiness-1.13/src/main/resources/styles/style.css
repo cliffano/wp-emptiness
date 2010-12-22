@@ -1,0 +1,257 @@
+/*
+Theme Name: Emptiness
+Theme URI: http://code.google.com/p/bitpress/wiki/Emptiness
+Description: A minimalist theme with a white background, containing mostly texts with a header image. Simple and clean, with very lightweight HTML and CSS.
+Version: @version@
+Author: Cliffano Subagio
+Author URI: http://blog.cliffano.com
+Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, microformats 
+*/
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: georgia, serif;
+    font-size: 13px;
+    line-height: 170%;
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+div#container {
+    margin: auto;
+    padding: 0 20px 0 20px;
+    width: 1020px;
+}
+div#header {
+    position: absolute;
+    top: 10px;
+    width: 1020px;
+}
+div#header div.side {
+    max-height: 281px;
+    overflow: auto;
+}
+div#header div.left a {
+    border-bottom: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+div#header div.main {
+    font-weight: bold;
+}
+div#header div.main a {
+    border-bottom: none;
+    font-size: 28px;
+    text-decoration: none;
+}
+div#header div.main h1 {
+    margin: 0;
+}
+div#bodyfooter {
+    margin-top: 350px;
+}
+div#body {
+    clear: both;
+}
+div#footer {
+    clear: both;
+    color: #333333;
+    font-size: 95%;
+}
+div#footer div.main {
+    text-align: right;
+}
+div#content {
+    float: left;
+}
+div.item {
+    clear: both;
+}
+div.side {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div.side li {
+    list-style-type: none;
+}
+div.side ul {
+    margin: 0;
+    padding: 0;
+}
+div.left {
+	margin-right: 20px;
+    text-align: right;
+    width: 150px;
+}
+div.right {
+	margin-left: 20px;
+    text-align: left;
+    width: 250px;
+}
+div.right ul {
+	margin-bottom: 20px;
+}
+div.main {
+    float: left;
+    margin: 10px 20px 10px 20px;
+    text-align: left;
+    width: 500px;
+}
+a {
+    border-bottom: 1px dotted #666666;
+    color: #666666;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #eeeeee;
+    color: #666666;
+    text-decoration: none;
+}
+blockquote, div.comment {
+    background-color: #eeeeee;
+    color: #666666;
+    max-width: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+code, pre {
+    background-color: #eeeeee;
+    color: #666666;
+    font-size: 110%;
+    max-width: 500px;
+    overflow: auto;
+    padding: 3px;
+}
+div.depth1 {
+	margin-left: 0px;
+}
+div.depth2 {
+	margin-left: 15px;
+}
+div.depth3 {
+	margin-left: 30px;
+}
+div.depth4 {
+	margin-left: 45px;
+}
+div.depth5 {
+	margin-left: 60px;
+}
+div.depth6 {
+	margin-left: 75px;
+}
+div.depth7 {
+	margin-left: 90px;
+}
+div.depth8 {
+	margin-left: 105px;
+}
+div.depth9 {
+	margin-left: 120px;
+}
+div.depth10 {
+	margin-left: 135px;
+}
+div.comment.bypostauthor {
+	border-left: 3px solid #999999;
+}
+div.splash {
+    background-repeat: no-repeat;
+    height: 281px;
+}
+input {
+    color: #666666;
+}
+h1 {
+    font-family: helvetica, sans-serif;
+}
+h2 {
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+h2 a {
+    border-bottom: none;
+    text-decoration: none;
+}
+h3 {
+    font-family: helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+img {
+    border: 0;
+}
+hr {
+	color: #eeeeee;
+	height: 1px;
+	margin: 15px auto 15px auto;
+	width: 80%;
+}
+th {
+    background-color: #dddddd;
+    padding: 5px;
+    text-align: center;
+}
+td {
+    background-color: #eeeeee;
+    padding: 3px;
+}
+li.cat-item {
+    display: inline;
+}
+span.date {
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+span.labels {
+    font-style: italic;
+}
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignright {
+    display: inline;
+}
+img.alignleft {
+    display: inline;
+}
+.alignright {
+    float: right;
+    margin: 0 0 8px 8px;
+}
+.alignleft {
+    float: left;
+    margin: 0 8px 8px 0;
+}
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 8px 0 8px;
+}
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+.gallery-caption, .wp-caption-text, .sticky {
+}
