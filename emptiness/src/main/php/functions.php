@@ -55,4 +55,5 @@ add_custom_image_header('header_style', 'emptiness_admin_header_style');
 add_custom_background();
 add_editor_style();
 add_theme_support('post-thumbnails');
+$content_width = 500;
 ?>

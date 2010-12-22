@@ -5,7 +5,9 @@ Description: A minimalist theme with a white background, containing mostly texts
 Version: @version@
 Author: Cliffano Subagio
 Author URI: http://blog.cliffano.com
-Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, microformats 
+Tags: white, light, three-columns, fixed-width, custom-header, right-sidebar, microformats
+License: GNU General Public License (GPL), v3 (or newer)
+License URI: http://www.gnu.org/licenses/gpl-3.0.html 
 */
 body {
     background-color: #ffffff;

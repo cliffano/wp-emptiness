@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.13.1" date="22-12-2010">
+      <action type="add" dev="cliffano">
+        Added content_width set to 500 pixels.
+      </action>
+      <action type="add" dev="cliffano">
+        Added license details to style.css, updated license to GPL3.
+      </action>
+    </release>
     <release version="1.13" date="22-12-2010">
       <action type="add" dev="cliffano">
         Added configurable body and post classes.
