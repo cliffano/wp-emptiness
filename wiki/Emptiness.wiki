@@ -40,6 +40,13 @@ Starting v1.10, there are two more widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.13
+    * Added configurable body and post classes.
+    * Replaced bloginfo('url') with home_url().
+    * Replaced bloginfo('stylesheet_directory') with get_stylesheet_directory_uri().
+    * Replaced author comment div class with .bypostauthor .
+    * Added nav_menu and post thumbnail support.
+    * Replaced hardcoded footer links with esc_url.
   * 1.12
     * Replaced deprecated function get_links() with get_bookmarks().
     * Replaced deprecated function get_the_author_id() with get_the_author_meta('ID').
