@@ -158,6 +158,8 @@ div.comment.bypostauthor {
 	border-left: 3px solid #999999;
 }
 div.splash {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
     background-repeat: no-repeat;
     height: 281px;
 }
