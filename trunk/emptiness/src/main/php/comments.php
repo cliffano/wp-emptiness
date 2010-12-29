@@ -24,6 +24,12 @@
               </div>
             <?php endif; ?>
             <div id="respond" class="item">
+              <div class="side left">
+              </div>
+              <div class="main">
+                <?php comment_form(); ?>
+              </div>
+              <!--
               <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
                 <div class="side left">
                   <?php if ( $user_ID ) : ?>
@@ -51,6 +57,7 @@
                   <?php comment_id_fields(); ?>
                   <?php do_action('comment_form', $post->ID); ?>
                 </div>
+                -->
               </form>
             </div>
           <?php endif; ?>

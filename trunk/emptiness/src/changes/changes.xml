@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.13.2" date="28-12-2010">
+      <action type="update" dev="cliffano">
+        Replaced comment form HTML with comment_form function.
+      </action>
+      <action type="add" dev="cliffano">
+        Added readme.txt .
+      </action>
+    </release>
     <release version="1.13.1" date="22-12-2010">
       <action type="add" dev="cliffano">
         Added content_width set to 500 pixels.
