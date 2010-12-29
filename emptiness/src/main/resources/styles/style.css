@@ -157,6 +157,23 @@ div.depth10 {
 div.comment.bypostauthor {
 	border-left: 3px solid #999999;
 }
+form#commentform, input#submit {
+    text-transform: lowercase;
+}
+.comment-form-author label, .comment-form-email label, .comment-form-url label {
+    float: left;
+    padding-right: 5px;
+    text-align: right;
+}
+.comment-form-author label, .comment-form-email label {
+    width: 50px;
+}
+.comment-form-url label {
+    width: 56px;
+}
+.form-allowed-tags, .comment-form-comment label {
+    display: none;
+}
 div.splash {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;

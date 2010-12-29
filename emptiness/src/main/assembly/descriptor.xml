@@ -31,6 +31,7 @@
       <directory></directory>
       <includes>
         <include>license.txt</include>
+        <include>readme.txt</include>
       </includes>
       <useDefaultExcludes>true</useDefaultExcludes>
       <outputDirectory></outputDirectory>
