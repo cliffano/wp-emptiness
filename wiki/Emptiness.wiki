@@ -40,6 +40,10 @@ Starting v1.10, there are two more widget sidebars:
 http://bitpress.googlecode.com/svn/wiki/images/emptiness_widgetready.jpg
 
 ==Changelog==
+  * 1.13.3
+    * Increased gap between header and body by 10 pixels.
+    * Styled up input and textarea.
+    * Image wider than main width (500px) should no longer overlap sidebar right.
   * 1.13.2
     * Replaced comment form HTML with comment_form function.
     * Added readme.txt .
