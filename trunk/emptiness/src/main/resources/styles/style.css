@@ -180,8 +180,10 @@ div.splash {
     background-repeat: no-repeat;
     height: 281px;
 }
-input {
+input, textarea {
+    border: 1px solid #cccccc;
     color: #666666;
+    padding: 4px;
 }
 h1 {
     font-family: helvetica, sans-serif;
