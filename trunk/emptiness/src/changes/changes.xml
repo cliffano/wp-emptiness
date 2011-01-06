@@ -4,7 +4,7 @@
     <title>Changes</title>
   </properties>
   <body>
-    <release version="1.13.3" date="06-01-2010">
+    <release version="1.13.3" date="06-01-2011">
       <action type="update" dev="cliffano">
         Increased gap between header and body by 10 pixels.
       </action>
