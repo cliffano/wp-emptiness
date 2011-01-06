@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.13.3" date="06-01-2010">
+      <action type="update" dev="cliffano">
+        Increased gap between header and body by 10 pixels.
+      </action>
+      <action type="update" dev="cliffano">
+        Styled up input and textarea.
+      </action>
+    </release>
     <release version="1.13.2" date="28-12-2010">
       <action type="update" dev="cliffano">
         Replaced comment form HTML with comment_form function.
