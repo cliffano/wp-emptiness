@@ -99,6 +99,9 @@ div.main {
     text-align: left;
     width: 500px;
 }
+div.item div.main {
+    overflow: hidden;
+}
 a {
     border-bottom: 1px dotted #666666;
     color: #666666;

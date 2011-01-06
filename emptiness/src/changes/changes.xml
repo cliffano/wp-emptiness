@@ -11,6 +11,9 @@
       <action type="update" dev="cliffano">
         Styled up input and textarea.
       </action>
+      <action type="update" dev="cliffano">
+        Image wider than main width (500px) should no longer overlap sidebar right.
+      </action>
     </release>
     <release version="1.13.2" date="28-12-2010">
       <action type="update" dev="cliffano">
