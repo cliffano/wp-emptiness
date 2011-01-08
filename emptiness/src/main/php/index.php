@@ -27,7 +27,7 @@
               <?php while (have_posts()) : the_post(); ?>
                 <div <?php post_class('item'); ?>>
                   <div class="vcard side left">
-                    <span class="date"><?php the_time('j M Y, g:ia') ?></span><br/>
+                    <span class="date"><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_time('j M Y, g:ia') ?></a></span><br/>
                     <span class="labels"><?php the_category(' ') ?><?php the_tags(': ', ' '); ?></span><br/>
                     by <span class="fn"><?php the_author_posts_link(); ?></span><br/>
                     <?php echo get_avatar( get_the_author_meta('ID'), $size = '48', $default = 'identicon' ); ?><br/>
