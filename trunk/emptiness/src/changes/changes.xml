@@ -4,6 +4,14 @@
     <title>Changes</title>
   </properties>
   <body>
+    <release version="1.14" date="08-01-2011">
+      <action type="add" dev="cliffano">
+        Made post date a permalink.
+      </action>
+      <action type="update" dev="cliffano">
+        Changed font to Helvetica.
+      </action>
+    </release>
     <release version="1.13.3" date="06-01-2011">
       <action type="update" dev="cliffano">
         Increased gap between header and body by 10 pixels.
