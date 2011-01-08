@@ -12,9 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: georgia, serif;
-    font-size: 13px;
-    line-height: 170%;
+    font: 83%/1.4 helvetica neue, arial, sans-serif;
+    line-height: 160%;
     margin: 0;
     padding: 20px 0 20px 0;
 }
@@ -103,7 +102,6 @@ div.item div.main {
     overflow: hidden;
 }
 a {
-    border-bottom: 1px dotted #666666;
     color: #666666;
     text-decoration: none;
 }
