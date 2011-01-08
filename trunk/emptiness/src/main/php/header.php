@@ -33,6 +33,14 @@
           <div class="side right">
             <?php
               if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Right Sidebar') ) :
+                if ( count(get_categories()) > 0 ) :
+            ?>
+              <h3>Categories</h3>
+              <ul>
+                <?php wp_list_categories('hierarchical=false&title_li='); ?> 
+              </ul>
+            <?php
+                endif;
                 if ( count(get_tags()) > 0 ) :
             ?>
               <h3>Tags</h3>
@@ -40,14 +48,6 @@
                 <li>
                   <?php wp_tag_cloud('smallest=9&largest=14&number=30'); ?>
                 </li>
-              </ul>
-            <?php
-                endif;
-                if ( count(get_categories()) > 0 ) :
-            ?>
-              <h3>Categories</h3>
-              <ul>
-                <?php wp_list_categories('hierarchical=false&title_li='); ?> 
               </ul>
             <?php
                 endif;
