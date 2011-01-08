@@ -45,10 +45,10 @@ div#header div.main a {
     text-decoration: none;
 }
 div#header div.main h1 {
-    margin: 0;
+    margin: 10px 0 5px 0;
 }
 div#bodyfooter {
-    margin-top: 360px;
+    margin-top: 375px;
 }
 div#body {
     clear: both;
