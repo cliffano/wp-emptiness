@@ -101,6 +101,9 @@ div.main {
 div.item div.main {
     overflow: hidden;
 }
+div.item div.main p a {
+    text-decoration: underline;
+}
 a {
     color: #666666;
     text-decoration: none;
