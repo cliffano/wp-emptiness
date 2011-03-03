@@ -35,7 +35,7 @@ function mytheme_comment($comment, $args, $depth) {
 define('HEADER_TEXTCOLOR', '000000');
 define('HEADER_IMAGE', '%s/header.jpg');
 define('HEADER_IMAGE_WIDTH', 500);
-define('HEADER_IMAGE_HEIGHT', 265);
+define('HEADER_IMAGE_HEIGHT', 281);
 function header_style() {
 ?>
 <style type="text/css">
