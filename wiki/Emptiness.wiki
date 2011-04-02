@@ -27,6 +27,8 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead. Please note that the height of the header sidebars are meant to be as high as the height of the header image (about 281px).
   * Q: On IE6, why does the right sidebar get pushed down below the body?
     A: This only happens when you have a post containing text or image wider than the width of the body (by default it's 500px). So you can either modify the wide content to fit 500px, or modify style.css and assign larger width (width attribute for div#container and div.main).
+  * Q: How to remove the header text?
+    A: Open up header.php file, delete the following lines: <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1> and <?php bloginfo('description'); ?>. If you want to delete the whole row (along with the search box), then you have to delete the first <div class="item">...</div> section on that file.
 
 ==Widget Sidebars==
 There are 4 types of widget sidebars:
