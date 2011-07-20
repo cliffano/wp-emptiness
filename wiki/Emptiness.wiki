@@ -27,6 +27,10 @@ http://bitpress.googlecode.com/svn/wiki/images/emptiness_comment.jpg
     A: E.g. if you want to change the width from 500px to 600px. First, you need to modify style.css file, change width value in div.main from 500px to 600px, then change div#container & div#header width from 1020px to 1020px + the increase in height (100px) = 1120px. Also modify functions.php file, change define('HEADER_IMAGE_WIDTH', 500); to define('HEADER_IMAGE_WIDTH', 600); .
   * Q: Why is there a huge space between the header and the post? Why are there overlapping texts on the header sidebars?
     A: This happens when either the Header Left sidebar or the Header Right sidebar has a lot of content that takes up space longer than the height of the header image. It's usually caused by widgets that are placed on Header Left sidebar or Header Right sidebar, you should move them to Body Right sidebar instead. Please note that the height of the header sidebars are meant to be as high as the height of the header image (about 281px).
+  * Q: Why is there a page/menu link showing up twice on the header left?
+    A: Some users reported this error which I can't reproduce consistently. One of them advised that the duplication disappeared after adding a custom link via Appearance -> Menus.
+  * Q: After uploading custom header image, why are top corners rounded while bottom corners are not?
+    A: This is a bug on versions older than March 3rd 2011. The fix is to modify functions.php file, replace 265 with 281, the reupload your custom header image.
   * Q: On IE6, why does the right sidebar get pushed down below the body?
     A: This only happens when you have a post containing text or image wider than the width of the body (by default it's 500px). So you can either modify the wide content to fit 500px, or modify style.css and assign larger width (width attribute for div#container and div.main).
 
