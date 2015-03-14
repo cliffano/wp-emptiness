@@ -12,9 +12,9 @@ Starting version 1.0, this theme requires WordPress? 2.7 or later. Older version
 Screenshots
 -----------
 
-![](https://raw.github.com/cliffano/wp-emptiness/master/emptiness.jpg)
+![](https://raw.github.com/cliffano/wp-emptiness/master/screenshots/emptiness.jpg)
 
-![](https://raw.github.com/cliffano/wp-emptiness/master/emptiness_comment.jpg)
+![](https://raw.github.com/cliffano/wp-emptiness/master/screenshots/emptiness_comment.jpg)
 
 FAQ
 ---
@@ -66,4 +66,4 @@ Starting v1.10, there are two more widget sidebars:
 Body Right-Top Sidebar - above Body Right Sidebar widget
 Body Right-Bottom Sidebar - bellow Body Right Sidebar widget
 
-![](https://raw.github.com/cliffano/wp-emptiness/master/emptiness_widgetready.jpg)
+![](https://raw.github.com/cliffano/wp-emptiness/master/screenshots/emptiness_widgetready.jpg)
